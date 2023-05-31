@@ -1,0 +1,60 @@
+INFO  2023-05-31 14:21:09,485 minitest.py _miniSetUp      341 =========Current case: test_rank_1_author=========
+INFO  2023-05-31 14:21:09,486 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_home, case info: HomePageTest.test_rank_1_author
+INFO  2023-05-31 14:21:09,487 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-31 14:21:09,488 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-31 14:21:09,489 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-31 14:21:09,489 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-31 14:21:09,490 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-31 14:21:09,491 connection.py _safely_send    417 ASYNC_SEND > {"id":"22f0ab8b-9295-40e7-82a2-fbbc96ce151f","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 14:21:09,517 connection.py _on_message     652 RECV < {"id":"22f0ab8b-9295-40e7-82a2-fbbc96ce151f","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 14:21:09,518 connection.py _handle_async_msg 688 received async msg: 22f0ab8b-9295-40e7-82a2-fbbc96ce151f
+INFO  2023-05-31 14:21:09,520 minitest.py capture         673 capture setup.png
+INFO  2023-05-31 14:21:09,522 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 14:21:09,523 connection.py _safely_send    417 SEND > {"id":"a0ff282c-162c-4440-ace2-8786b444f5ed","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 14:21:09,845 connection.py _on_message     650 RECV < {"id":"a0ff282c-162c-4440-ace2-8786b444f5ed","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWlwHFeW7/c/N5fagcJGgAS4ihQpUS2q1ZTUanWLPd163e5lZjwzfvNevA9+E+GYcLywP/nZE/YXx/iTHeHw12c7wuGwHWE/v2V6rJnu1tLd6qFEbSTFReIGccWOwloAClWVy73HH7KqUCgUQCykWCLPPxiHP2RlZd578+bJk+fezCL++P+DUjBGrFixYsW2lCX++O8AA1JgABAWFhYWbhFWDAOlmA0IwsLCwsKtw8Sf/D1gACVWrFixYlvKKnD1bxIWFhYWbiEm/uRNAFWfDWFhYWHhFmEFEMgCM8gSFhYWFm4dJv7078EMAhggEhYWFhZuEVZgQCkwQVnCwsLCwq3DUQQNKIABQFhYWFi4RVgBBCvy1s...
+INFO  2023-05-31 14:21:09,847 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 14:21:09,848 minitest.py _miniSetUp      394 =========case: test_rank_1_author start=========
+INFO  2023-05-31 14:21:09,849 app.py     navigate_to     522 NavigateTo: /pages/index/index
+DEBUG 2023-05-31 14:21:09,849 connection.py _safely_send    417 ASYNC_SEND > {"id":"9b84915f-0bcd-4b18-811c-bbe9bfacd349","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 14:21:09,857 connection.py _on_message     652 RECV < {"id":"9b84915f-0bcd-4b18-811c-bbe9bfacd349","error":{"message":"can not navigateTo a tabbar page"}}
+ERROR 2023-05-31 14:21:09,859 connection.py _on_message     660 [9b84915f-0bcd-4b18-811c-bbe9bfacd349]: can not navigateTo a tabbar page
+INFO  2023-05-31 14:21:09,860 connection.py _handle_async_msg 688 received async msg: 9b84915f-0bcd-4b18-811c-bbe9bfacd349
+DEBUG 2023-05-31 14:21:09,861 minitest.py _miniTearDown   587 =========Current case Down: test_rank_1_author=========
+INFO  2023-05-31 14:21:09,862 minitest.py capture         673 capture teardown.png
+INFO  2023-05-31 14:21:09,864 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 14:21:09,865 connection.py _safely_send    417 SEND > {"id":"04d4ccea-857a-4240-9116-6aefdb760013","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 14:21:09,984 connection.py _on_message     650 RECV < {"id":"04d4ccea-857a-4240-9116-6aefdb760013","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWlwHFeW7/c/N5fagcJGgAS4ihQpUS2q1ZTUanWLPd163e5lZjwzfvNevA9+E+GYcLywP/nZE/YXx/iTHeHw12c7wuGwHWE/v2V6rJnu1tLd6qFEbSTFReIGccWOwloAClWVy73HH7KqUCgUQCykWCLPPxiHP2RlZd578+bJk+fezCL++P+DUjBGrFixYsW2lCX++O8AA1JgABAWFhYWbhFWDAOlmA0IwsLCwsKtw8Sf/D1gACVWrFixYlvKKnD1bxIWFhYWbiEm/uRNAFWfDWFhYWHhFmEFEMgCM8gSFhYWFm4dJv7078EMAhggEhYWFhZuEVZgQCkwQVnCwsLCwq3DUQQNKIABQFhYWFi4RVgBBCvy1s...
+INFO  2023-05-31 14:21:09,987 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 14:21:09,988 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-31 14:21:09,989 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-05-31 14:21:10,002 assertbase.py _get_stack_info 342 <bound method HomePageTest.setUp of <testcase.test_home.HomePageTest testMethod=test_rank_1_author>>
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 121, in run
+    self._callSetUp()
+  File "D:\python39\lib\unittest\case.py", line 547, in _callSetUp
+    self.setUp()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\testcase\test_home.py", line 26, in setUp
+    self.homepage.navigate_to_open(route.home_page)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\page\BasePage.py", line 39, in navigate_to_open
+    self.mini.app.navigate_to(route)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 523, in navigate_to
+    page = self._change_route_async("navigateTo", url, is_wait_url_change)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 758, in _change_route_async
+    cmd.get_open_result(wait_timeout)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\app.py", line 123, in get_open_result
+    return self._open_callback.get_result()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\callback.py", line 126, in get_result
+    return self._waiter.result()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\callback.py", line 105, in wait_called
+    return self._loop.run_coroutine(
+  File "D:\python39\lib\concurrent\futures\_base.py", line 446, in result
+    return self.__get_result()
+  File "D:\python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\utils\utils.py", line 409, in async_wait
+    return fut.result()
+minium.framework.exception.MiniAppError: can not navigateTo a tabbar page

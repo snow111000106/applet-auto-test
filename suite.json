@@ -1,0 +1,10 @@
+{
+  "pkg_list": [
+    {
+      "case_list": [
+        "test_fans_inc_rank"
+      ],
+      "pkg": "testcase.test_home"
+    }
+  ]
+}

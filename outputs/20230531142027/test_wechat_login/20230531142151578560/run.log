@@ -1,0 +1,80 @@
+INFO  2023-05-31 14:21:51,579 minitest.py _miniSetUp      341 =========Current case: test_wechat_login=========
+INFO  2023-05-31 14:21:51,580 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_login, case info: LoginPageTest.test_wechat_login
+INFO  2023-05-31 14:21:51,581 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-31 14:21:51,581 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-31 14:21:51,582 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-31 14:21:51,583 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-31 14:21:51,583 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-31 14:21:51,584 connection.py _safely_send    417 ASYNC_SEND > {"id":"8a6768f5-942c-4772-b7ba-36df471ca338","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 14:21:51,602 connection.py _on_message     652 RECV < {"id":"8a6768f5-942c-4772-b7ba-36df471ca338","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 14:21:51,603 connection.py _handle_async_msg 688 received async msg: 8a6768f5-942c-4772-b7ba-36df471ca338
+INFO  2023-05-31 14:21:51,606 minitest.py capture         673 capture setup.png
+INFO  2023-05-31 14:21:51,607 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 14:21:51,608 connection.py _safely_send    417 SEND > {"id":"6a28c87d-8db8-4c14-9bdd-72bbb484b6b4","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 14:21:51,721 connection.py _on_message     650 RECV < {"id":"6a28c87d-8db8-4c14-9bdd-72bbb484b6b4","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 14:21:51,723 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 14:21:51,724 minitest.py _miniSetUp      394 =========case: test_wechat_login start=========
+INFO  2023-05-31 14:21:51,725 app.py     navigate_to     522 NavigateTo: /pages/common/login/index
+DEBUG 2023-05-31 14:21:51,726 connection.py _safely_send    417 ASYNC_SEND > {"id":"827f1d2d-3426-481a-b272-f8e4e2957f62","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/common/login/index"}]}}
+DEBUG 2023-05-31 14:21:51,771 connection.py _on_message     652 RECV < {"id":"827f1d2d-3426-481a-b272-f8e4e2957f62","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+INFO  2023-05-31 14:21:51,773 connection.py _handle_async_msg 688 received async msg: 827f1d2d-3426-481a-b272-f8e4e2957f62
+DEBUG 2023-05-31 14:21:52,098 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":11,"path":"pages/common/login/index","query":{},"openType":"navigateTo","__ts__":1685514112088},1685514112089]}}
+INFO  2023-05-31 14:21:52,099 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 11, 'path': 'pages/common/login/index', 'query': {}, 'openType': 'navigateTo', '__ts__': 1685514112088}, 1685514112089]}
+DEBUG 2023-05-31 14:21:52,099 connection.py _safely_send    417 SEND > {"id":"1e2302b7-36c8-4edc-9956-c064e5129004","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 14:21:52,103 connection.py _on_message     652 RECV < {"id":"1e2302b7-36c8-4edc-9956-c064e5129004","result":{"pageId":11,"path":"pages/common/login/index","query":{}}}
+DEBUG 2023-05-31 14:21:52,105 connection.py _safely_send    417 SEND > {"id":"1270698d-9046-41ef-88cf-d15e4c8951a6","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 14:21:52,109 connection.py _on_message     652 RECV < {"id":"1270698d-9046-41ef-88cf-d15e4c8951a6","result":{"pageId":11,"path":"pages/common/login/index","query":{}}}
+INFO  2023-05-31 14:21:52,110 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 14:21:52,112 connection.py _safely_send    417 SEND > {"id":"e78d32cb-9ac4-4b80-a69d-7e33d20986dd","method":"Page.getElements","params":{"selector":"button","pageId":11}}
+DEBUG 2023-05-31 14:21:52,184 connection.py _on_message     652 RECV < {"id":"e78d32cb-9ac4-4b80-a69d-7e33d20986dd","result":{"elements":[{"elementId":"c7373751-2ef0-480c-9c5c-1eee1ecac067","tagName":"button"},{"elementId":"10529063-5915-4db7-8d62-e77e8cf631fe","tagName":"button"}]}}
+INFO  2023-05-31 14:21:52,187 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000271271DB4C0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x00000271271DBC70>]
+DEBUG 2023-05-31 14:21:52,189 connection.py _safely_send    417 SEND > {"id":"e4356d1b-f384-4606-be90-53ed2fffa62a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"c7373751-2ef0-480c-9c5c-1eee1ecac067","pageId":11}}
+DEBUG 2023-05-31 14:21:52,197 connection.py _on_message     652 RECV < {"id":"e4356d1b-f384-4606-be90-53ed2fffa62a","result":{"properties":["微信登录/注册"]}}
+DEBUG 2023-05-31 14:21:52,199 connection.py _safely_send    417 SEND > {"id":"2a0b3574-0cfe-4602-97d5-f8a1c8cae3f7","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"c7373751-2ef0-480c-9c5c-1eee1ecac067","pageId":11}}
+DEBUG 2023-05-31 14:21:52,204 connection.py _on_message     652 RECV < {"id":"2a0b3574-0cfe-4602-97d5-f8a1c8cae3f7","result":{"styles":["auto"]}}
+DEBUG 2023-05-31 14:21:52,206 connection.py _safely_send    417 SEND > {"id":"7fb6ad23-c8be-46fa-b424-69d920399b4e","method":"Element.tap","params":{"elementId":"c7373751-2ef0-480c-9c5c-1eee1ecac067","pageId":11}}
+DEBUG 2023-05-31 14:21:52,217 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"getUserProfile_super_after","args":[null]}}
+DEBUG 2023-05-31 14:21:52,219 app.py     super_after     902 wx.getUserProfile after hook result: [None]
+DEBUG 2023-05-31 14:21:52,219 connection.py _on_message     652 RECV < {"id":"7fb6ad23-c8be-46fa-b424-69d920399b4e","result":{}}
+INFO  2023-05-31 14:21:52,220 basenative.py wrapper         25  call BaseNative.notify
+INFO  2023-05-31 14:21:52,220 basenative.py wrapper         25  call BaseNative.notify
+DEBUG 2023-05-31 14:21:52,221 basenative.py notify          625 receive a notify signal
+DEBUG 2023-05-31 14:21:52,222 basenative.py notify          625 receive a notify signal
+INFO  2023-05-31 14:21:52,222 basenative.py wrapper         29  call BaseNative.notify end
+INFO  2023-05-31 14:21:52,223 basenative.py wrapper         29  call BaseNative.notify end
+DEBUG 2023-05-31 14:21:53,168 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":12,"path":"pages/index/index","query":{},"openType":"redirectTo","__ts__":1685514113167},1685514113168]}}
+INFO  2023-05-31 14:21:53,170 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 12, 'path': 'pages/index/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1685514113167}, 1685514113168]}
+DEBUG 2023-05-31 14:21:53,543 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":12,"path":"pages/index/index","query":{},"openType":"redirectTo","__ts__":1685514113505},1685514113506]}}
+INFO  2023-05-31 14:21:53,544 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 12, 'path': 'pages/index/index', 'query': {}, 'openType': 'redirectTo', '__ts__': 1685514113505}, 1685514113506]}
+INFO  2023-05-31 14:21:56,240 minitest.py capture         673 capture assertEqual-failed.png
+INFO  2023-05-31 14:21:56,241 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 14:21:56,241 connection.py _safely_send    417 SEND > {"id":"834176aa-56dd-4774-a4e9-bd5b1e577108","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 14:21:56,331 connection.py _on_message     650 RECV < {"id":"834176aa-56dd-4774-a4e9-bd5b1e577108","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWlwHFeW7/c/N5fagcJGgAS4ihQpUS2q1ZTUanWLPd163e5lZjwzfvNevA9+E+GYcLywP/nZE/YXx/iTHeHw12c7wuGwHWE/v2V6rJnu1tLd6qFEbSTFReIGccWOwloAClWVy73HH7KqUCgUQCykWCLPPxiHP2RlZd578+bJk+fezCL++P+DUjBGrFixYsW2lCX++O8AA1JgABAWFhYWbhFWDAOlmA0IwsLCwsKtw8Sf/D1gACVWrFixYlvKKnD1bxIWFhYWbiEm/uRNAFWfDWFhYWHhFmEFEMgCM8gSFhYWFm4dJv7078EMAhggEhYWFhZuEVZgQCkwQVnCwsLCwq3DUQQNKIABQFhYWFi4RVgBBCvy1s...
+INFO  2023-05-31 14:21:56,333 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-05-31 14:21:56,334 connection.py _safely_send    417 SEND > {"id":"e3e5573e-203d-40ef-8848-9f16c0df53e7","method":"Page.getElementByXpath","params":{"selector":"/*","pageId":12}}
+DEBUG 2023-05-31 14:21:56,339 connection.py _on_message     652 RECV < {"id":"e3e5573e-203d-40ef-8848-9f16c0df53e7","result":{"elementId":"0f7c4cb4-de6e-4465-8f76-635e1dbdd7b6","tagName":"view"}}
+DEBUG 2023-05-31 14:21:56,340 connection.py _safely_send    417 SEND > {"id":"07cfffaf-3e40-4ce0-9185-41d829e65bd4","method":"Element.getWXML","params":{"type":"outer","elementId":"0f7c4cb4-de6e-4465-8f76-635e1dbdd7b6","pageId":12}}
+DEBUG 2023-05-31 14:21:56,383 connection.py _on_message     650 RECV < {"id":"07cfffaf-3e40-4ce0-9185-41d829e65bd4","result":{"wxml":"<view class=\"homepage data-v-b3088e64\"><view class=\"header-bg data-v-b3088e64\"><view class=\"bg-inner data-v-b3088e64\"></view></view><view class=\"content data-v-b3088e64\"><page-header is=\"components/mix-page-header/mix-page-header\" class=\"data-v-b3088e64\"><view class=\"mix-page-header header--mix-page-header data-v-7dfa81c6 header--data-v-7dfa81c6\"><view class=\"content header--content flex header--flex align-items-center header--...
+DEBUG 2023-05-31 14:21:58,388 connection.py _safely_send    417 ASYNC_SEND > {"id":"9c4b6c8d-1c3a-4eab-8bc2-47d25588e2af","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 14:21:58,414 connection.py _on_message     652 RECV < {"id":"9c4b6c8d-1c3a-4eab-8bc2-47d25588e2af","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 14:21:58,416 connection.py _handle_async_msg 688 received async msg: 9c4b6c8d-1c3a-4eab-8bc2-47d25588e2af
+DEBUG 2023-05-31 14:21:58,417 minitest.py _miniTearDown   587 =========Current case Down: test_wechat_login=========
+INFO  2023-05-31 14:21:58,418 minitest.py capture         673 capture teardown.png
+INFO  2023-05-31 14:21:58,421 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 14:21:58,424 connection.py _safely_send    417 SEND > {"id":"6c870f5d-17a9-4d1e-a740-7659b2b0d00f","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 14:21:58,532 connection.py _on_message     650 RECV < {"id":"6c870f5d-17a9-4d1e-a740-7659b2b0d00f","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWlwHFeW7/c/N5fagcJGgAS4ihQpUS2q1ZTUanWLPd163e5lZjwzfvNevA9+E+GYcLywP/nZE/YXx/iTHeHw12c7wuGwHWE/v2V6rJnu1tLd6qFEbSTFReIGccWOwloAClWVy73HH7KqUCgUQCykWCLPPxiHP2RlZd578+bJk+fezCL++P+DUjBGrFixYsW2lCX++O8AA1JgABAWFhYWbhFWDAOlmA0IwsLCwsKtw8Sf/D1gACVWrFixYlvKKnD1bxIWFhYWbiEm/uRNAFWfDWFhYWHhFmEFEMgCM8gSFhYWFm4dJv7078EMAhggEhYWFhZuEVZgQCkwQVnCwsLCwq3DUQQNKIABQFhYWFi4RVgBBCvy1s...
+INFO  2023-05-31 14:21:58,534 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 14:21:58,535 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-31 14:21:58,536 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-05-31 14:21:58,542 assertbase.py _get_stack_info 342 <bound method LoginPageTest.test_wechat_login of <testcase.test_login.LoginPageTest testMethod=test_wechat_login>>
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+AssertionError: '/pages/index/index' != '/pages/user/index'
+- /pages/index/index
+?        ^^^ ^
++ /pages/user/index
+?        ^^ ^
+

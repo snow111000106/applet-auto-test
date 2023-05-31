@@ -1,0 +1,169 @@
+INFO  2023-05-31 15:06:12,990 minitest.py _miniSetUp      341 =========Current case: test_wechat_login=========
+INFO  2023-05-31 15:06:12,991 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_login, case info: LoginPageTest.test_wechat_login
+INFO  2023-05-31 15:06:12,991 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-31 15:06:12,993 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-31 15:06:12,994 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-31 15:06:12,995 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-31 15:06:12,996 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-31 15:06:12,998 connection.py _safely_send    417 ASYNC_SEND > {"id":"b4ecfede-b295-43fc-a2d6-5c51e70c778f","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 15:06:13,022 connection.py _on_message     652 RECV < {"id":"b4ecfede-b295-43fc-a2d6-5c51e70c778f","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 15:06:13,025 connection.py _handle_async_msg 688 received async msg: b4ecfede-b295-43fc-a2d6-5c51e70c778f
+INFO  2023-05-31 15:06:13,028 minitest.py capture         673 capture setup.png
+INFO  2023-05-31 15:06:13,030 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 15:06:13,032 connection.py _safely_send    417 SEND > {"id":"42defe6d-1c74-4417-8a82-a530344332cd","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 15:06:13,153 connection.py _on_message     650 RECV < {"id":"42defe6d-1c74-4417-8a82-a530344332cd","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 15:06:13,156 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 15:06:13,158 minitest.py _miniSetUp      394 =========case: test_wechat_login start=========
+DEBUG 2023-05-31 15:06:13,159 connection.py _safely_send    417 SEND > {"id":"88833016-cd29-404d-a07a-47534c73c38f","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 15:06:13,162 connection.py _on_message     652 RECV < {"id":"88833016-cd29-404d-a07a-47534c73c38f","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+DEBUG 2023-05-31 15:06:13,164 connection.py _safely_send    417 SEND > {"id":"49030864-e5af-4ed9-b635-6c6659b0f05b","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 15:06:13,166 connection.py _on_message     652 RECV < {"id":"49030864-e5af-4ed9-b635-6c6659b0f05b","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+INFO  2023-05-31 15:06:13,168 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:13,169 connection.py _safely_send    417 SEND > {"id":"c9ffdc27-c75a-470a-a9e1-c21af0f1120f","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:13,173 connection.py _on_message     652 RECV < {"id":"c9ffdc27-c75a-470a-a9e1-c21af0f1120f","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:13,174 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4D90>]
+DEBUG 2023-05-31 15:06:13,175 connection.py _safely_send    417 SEND > {"id":"90dd2355-5f8b-4f3f-9a8a-7f1c15becf29","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:13,178 connection.py _on_message     652 RECV < {"id":"90dd2355-5f8b-4f3f-9a8a-7f1c15becf29","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:14,190 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:14,191 connection.py _safely_send    417 SEND > {"id":"ff0b55bd-55a9-4fc5-84e2-e491181d164a","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:14,195 connection.py _on_message     652 RECV < {"id":"ff0b55bd-55a9-4fc5-84e2-e491181d164a","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:14,197 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4340>]
+DEBUG 2023-05-31 15:06:14,198 connection.py _safely_send    417 SEND > {"id":"e21916ec-ec2b-4a27-b2c2-c43a1f10b78e","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:14,200 connection.py _on_message     652 RECV < {"id":"e21916ec-ec2b-4a27-b2c2-c43a1f10b78e","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:15,215 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:15,216 connection.py _safely_send    417 SEND > {"id":"f7fc4919-b3aa-45a0-a8e8-dd4bc6fcaed5","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:15,220 connection.py _on_message     652 RECV < {"id":"f7fc4919-b3aa-45a0-a8e8-dd4bc6fcaed5","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:15,221 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C47F0>]
+DEBUG 2023-05-31 15:06:15,222 connection.py _safely_send    417 SEND > {"id":"0a70153f-fd40-41b8-b236-0eaed4fa93ac","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:15,225 connection.py _on_message     652 RECV < {"id":"0a70153f-fd40-41b8-b236-0eaed4fa93ac","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:16,227 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:16,229 connection.py _safely_send    417 SEND > {"id":"a13cda5e-47f2-4b52-bd25-ec5fb29be2eb","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:16,231 connection.py _on_message     652 RECV < {"id":"a13cda5e-47f2-4b52-bd25-ec5fb29be2eb","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:16,232 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4130>]
+DEBUG 2023-05-31 15:06:16,233 connection.py _safely_send    417 SEND > {"id":"16387b56-e0ac-41d2-acb7-68c24eef5661","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:16,237 connection.py _on_message     652 RECV < {"id":"16387b56-e0ac-41d2-acb7-68c24eef5661","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:17,250 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:17,251 connection.py _safely_send    417 SEND > {"id":"fa414445-5dfb-4b91-8cd3-1ac76d8520d6","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:17,255 connection.py _on_message     652 RECV < {"id":"fa414445-5dfb-4b91-8cd3-1ac76d8520d6","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:17,257 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C45B0>]
+DEBUG 2023-05-31 15:06:17,258 connection.py _safely_send    417 SEND > {"id":"159960e2-37ec-41b7-90b5-ec8ff53c541a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:17,262 connection.py _on_message     652 RECV < {"id":"159960e2-37ec-41b7-90b5-ec8ff53c541a","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:18,263 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:18,264 connection.py _safely_send    417 SEND > {"id":"52844fd5-4b60-4eb4-85b5-4f7f9a85aca3","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:18,267 connection.py _on_message     652 RECV < {"id":"52844fd5-4b60-4eb4-85b5-4f7f9a85aca3","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:18,269 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4160>]
+DEBUG 2023-05-31 15:06:18,270 connection.py _safely_send    417 SEND > {"id":"25512aed-99b3-4877-9ff1-659b2bf4e9b8","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:18,272 connection.py _on_message     652 RECV < {"id":"25512aed-99b3-4877-9ff1-659b2bf4e9b8","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:19,275 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:19,276 connection.py _safely_send    417 SEND > {"id":"c10684b0-7143-4e35-a532-c3f1ae02bfb4","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:19,280 connection.py _on_message     652 RECV < {"id":"c10684b0-7143-4e35-a532-c3f1ae02bfb4","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:19,281 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4CA0>]
+DEBUG 2023-05-31 15:06:19,282 connection.py _safely_send    417 SEND > {"id":"0450ef18-7277-46b9-8d25-0792949c6da1","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:19,284 connection.py _on_message     652 RECV < {"id":"0450ef18-7277-46b9-8d25-0792949c6da1","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:20,285 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:20,286 connection.py _safely_send    417 SEND > {"id":"fafbb4ec-5b71-4266-8f34-e8c45d574d92","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:20,290 connection.py _on_message     652 RECV < {"id":"fafbb4ec-5b71-4266-8f34-e8c45d574d92","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:20,292 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4D90>]
+DEBUG 2023-05-31 15:06:20,293 connection.py _safely_send    417 SEND > {"id":"e209a7c4-e1ee-4aba-ac47-fcd3b045a8d7","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:20,296 connection.py _on_message     652 RECV < {"id":"e209a7c4-e1ee-4aba-ac47-fcd3b045a8d7","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:21,298 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:21,299 connection.py _safely_send    417 SEND > {"id":"c68bc774-1a9b-4ea3-bc02-376b944f68e4","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:21,303 connection.py _on_message     652 RECV < {"id":"c68bc774-1a9b-4ea3-bc02-376b944f68e4","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:21,305 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4130>]
+DEBUG 2023-05-31 15:06:21,306 connection.py _safely_send    417 SEND > {"id":"62cb7b78-dfcc-461f-9385-5b4ac2e6838d","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:21,308 connection.py _on_message     652 RECV < {"id":"62cb7b78-dfcc-461f-9385-5b4ac2e6838d","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:22,324 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:22,325 connection.py _safely_send    417 SEND > {"id":"a0c08b5a-e8bc-4a7f-9e3c-a8cd6604dcf6","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:22,329 connection.py _on_message     652 RECV < {"id":"a0c08b5a-e8bc-4a7f-9e3c-a8cd6604dcf6","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:22,330 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C47F0>]
+DEBUG 2023-05-31 15:06:22,331 connection.py _safely_send    417 SEND > {"id":"1f0cf91d-f0a6-43fb-9bc6-63b15f8cca17","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:22,333 connection.py _on_message     652 RECV < {"id":"1f0cf91d-f0a6-43fb-9bc6-63b15f8cca17","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:23,336 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:23,337 connection.py _safely_send    417 SEND > {"id":"56e2eab3-aba6-4365-928c-ecc42a7de8bf","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:23,341 connection.py _on_message     652 RECV < {"id":"56e2eab3-aba6-4365-928c-ecc42a7de8bf","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:23,342 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C43A0>]
+DEBUG 2023-05-31 15:06:23,343 connection.py _safely_send    417 SEND > {"id":"b186436f-4676-466d-94e1-bb188aab379e","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:23,346 connection.py _on_message     652 RECV < {"id":"b186436f-4676-466d-94e1-bb188aab379e","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:24,359 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:24,360 connection.py _safely_send    417 SEND > {"id":"6dc77d98-f3c7-4c73-bbec-47ae74a266c4","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:24,364 connection.py _on_message     652 RECV < {"id":"6dc77d98-f3c7-4c73-bbec-47ae74a266c4","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:24,366 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4340>]
+DEBUG 2023-05-31 15:06:24,367 connection.py _safely_send    417 SEND > {"id":"68eeecd6-8c5b-4d31-9eaa-7ffad59482d6","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:24,371 connection.py _on_message     652 RECV < {"id":"68eeecd6-8c5b-4d31-9eaa-7ffad59482d6","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:25,386 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:25,387 connection.py _safely_send    417 SEND > {"id":"e5e4afb6-1c22-4c88-b543-c83f0f207258","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:25,391 connection.py _on_message     652 RECV < {"id":"e5e4afb6-1c22-4c88-b543-c83f0f207258","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:25,393 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C42E0>]
+DEBUG 2023-05-31 15:06:25,393 connection.py _safely_send    417 SEND > {"id":"b07ccfe8-a452-4891-920d-9300a368695e","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:25,396 connection.py _on_message     652 RECV < {"id":"b07ccfe8-a452-4891-920d-9300a368695e","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:26,399 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:26,400 connection.py _safely_send    417 SEND > {"id":"3d7d435f-b016-4560-8189-d713a0bb5e6f","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:26,404 connection.py _on_message     652 RECV < {"id":"3d7d435f-b016-4560-8189-d713a0bb5e6f","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:26,405 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4160>]
+DEBUG 2023-05-31 15:06:26,406 connection.py _safely_send    417 SEND > {"id":"6b7c34a0-b30d-4174-89be-53e3cfd55c04","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:26,409 connection.py _on_message     652 RECV < {"id":"6b7c34a0-b30d-4174-89be-53e3cfd55c04","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:27,422 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:27,423 connection.py _safely_send    417 SEND > {"id":"604b3794-28d5-4231-a446-ff01bf75cac2","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:27,426 connection.py _on_message     652 RECV < {"id":"604b3794-28d5-4231-a446-ff01bf75cac2","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:27,428 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4760>]
+DEBUG 2023-05-31 15:06:27,428 connection.py _safely_send    417 SEND > {"id":"947c36b1-5b58-4931-b66d-ecb076970eb2","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:27,431 connection.py _on_message     652 RECV < {"id":"947c36b1-5b58-4931-b66d-ecb076970eb2","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:28,435 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:28,437 connection.py _safely_send    417 SEND > {"id":"8d2ff522-0d1b-496e-9b24-6eb4f91ff5f2","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:28,441 connection.py _on_message     652 RECV < {"id":"8d2ff522-0d1b-496e-9b24-6eb4f91ff5f2","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:28,443 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4130>]
+DEBUG 2023-05-31 15:06:28,444 connection.py _safely_send    417 SEND > {"id":"83aaf60b-e685-450a-8c0a-7cac870f6437","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:28,446 connection.py _on_message     652 RECV < {"id":"83aaf60b-e685-450a-8c0a-7cac870f6437","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:29,460 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:29,461 connection.py _safely_send    417 SEND > {"id":"979e58e8-2e78-4ce0-8e6a-e1afe0d3f603","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:29,465 connection.py _on_message     652 RECV < {"id":"979e58e8-2e78-4ce0-8e6a-e1afe0d3f603","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:29,466 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C47F0>]
+DEBUG 2023-05-31 15:06:29,467 connection.py _safely_send    417 SEND > {"id":"0ab419b1-ca52-4203-ab05-c27a338f1f44","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:29,470 connection.py _on_message     652 RECV < {"id":"0ab419b1-ca52-4203-ab05-c27a338f1f44","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:30,486 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:30,488 connection.py _safely_send    417 SEND > {"id":"00fc08d6-6204-4fa6-a8d7-aced9e1948d9","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:30,494 connection.py _on_message     652 RECV < {"id":"00fc08d6-6204-4fa6-a8d7-aced9e1948d9","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:30,495 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C43A0>]
+DEBUG 2023-05-31 15:06:30,496 connection.py _safely_send    417 SEND > {"id":"dfa82afd-0324-4ade-aa9e-10534d85f868","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:30,498 connection.py _on_message     652 RECV < {"id":"dfa82afd-0324-4ade-aa9e-10534d85f868","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:31,505 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:31,506 connection.py _safely_send    417 SEND > {"id":"e3e09211-0320-495f-8f1e-7c9e6cf5e17a","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:31,511 connection.py _on_message     652 RECV < {"id":"e3e09211-0320-495f-8f1e-7c9e6cf5e17a","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:31,513 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C4340>]
+DEBUG 2023-05-31 15:06:31,514 connection.py _safely_send    417 SEND > {"id":"b82addfa-b69e-43cd-9502-1e3b65b902b2","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:31,516 connection.py _on_message     652 RECV < {"id":"b82addfa-b69e-43cd-9502-1e3b65b902b2","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:32,527 page.py    _get_elements_by_css 559 try to get elements: button
+DEBUG 2023-05-31 15:06:32,528 connection.py _safely_send    417 SEND > {"id":"ad2f6d15-0697-47a5-8527-5e7eca1699ac","method":"Page.getElements","params":{"selector":"button","pageId":2}}
+DEBUG 2023-05-31 15:06:32,533 connection.py _on_message     652 RECV < {"id":"ad2f6d15-0697-47a5-8527-5e7eca1699ac","result":{"elements":[{"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","tagName":"button"}]}}
+INFO  2023-05-31 15:06:32,534 page.py    _get_elements_by_css 566 find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x00000275223C42E0>]
+DEBUG 2023-05-31 15:06:32,535 connection.py _safely_send    417 SEND > {"id":"cb45377f-a87f-4623-877f-77c157cc68b1","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"d1adcb59-2505-4ce9-a416-677d01b620c4","pageId":2}}
+DEBUG 2023-05-31 15:06:32,538 connection.py _on_message     652 RECV < {"id":"cb45377f-a87f-4623-877f-77c157cc68b1","result":{"properties":[""]}}
+INFO  2023-05-31 15:06:33,563 minitest.py capture         673 capture assertEqual-failed.png
+INFO  2023-05-31 15:06:33,565 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 15:06:33,566 connection.py _safely_send    417 SEND > {"id":"5e505dcb-2bee-4e4c-aa3f-55f4a466947d","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 15:06:33,662 connection.py _on_message     650 RECV < {"id":"5e505dcb-2bee-4e4c-aa3f-55f4a466947d","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 15:06:33,665 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-05-31 15:06:33,666 connection.py _safely_send    417 SEND > {"id":"14cf4579-40c0-4d2d-a22c-63df1901feda","method":"Page.getElementByXpath","params":{"selector":"/*","pageId":2}}
+DEBUG 2023-05-31 15:06:33,671 connection.py _on_message     652 RECV < {"id":"14cf4579-40c0-4d2d-a22c-63df1901feda","result":{"elementId":"62c60a77-3a95-419a-b89e-250e1884b9a8","tagName":"view"}}
+DEBUG 2023-05-31 15:06:33,673 connection.py _safely_send    417 SEND > {"id":"1115c520-9cfc-40b0-aca4-2681e9a264d6","method":"Element.getWXML","params":{"type":"outer","elementId":"62c60a77-3a95-419a-b89e-250e1884b9a8","pageId":2}}
+DEBUG 2023-05-31 15:06:33,721 connection.py _on_message     650 RECV < {"id":"1115c520-9cfc-40b0-aca4-2681e9a264d6","result":{"wxml":"<view class=\"homepage data-v-b3088e64\"><view class=\"header-bg data-v-b3088e64\"><view class=\"bg-inner data-v-b3088e64\"></view></view><view class=\"content data-v-b3088e64\"><page-header is=\"components/mix-page-header/mix-page-header\" class=\"data-v-b3088e64\"><view class=\"mix-page-header header--mix-page-header data-v-7dfa81c6 header--data-v-7dfa81c6\"><view class=\"content header--content flex header--flex align-items-center header--...
+DEBUG 2023-05-31 15:06:33,724 minitest.py _miniTearDown   587 =========Current case Down: test_wechat_login=========
+INFO  2023-05-31 15:06:33,725 minitest.py capture         673 capture teardown.png
+INFO  2023-05-31 15:06:33,727 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 15:06:33,728 connection.py _safely_send    417 SEND > {"id":"1a8a44e3-4e41-4584-bc36-c8c16ecbea1e","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 15:06:33,830 connection.py _on_message     650 RECV < {"id":"1a8a44e3-4e41-4584-bc36-c8c16ecbea1e","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 15:06:33,833 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 15:06:33,834 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-31 15:06:33,834 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-05-31 15:06:33,837 assertbase.py _get_stack_info 342 <bound method LoginPageTest.test_wechat_login of <testcase.test_login.LoginPageTest testMethod=test_wechat_login>>
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+AssertionError: '/pages/index/index' != '/pages/user/index'
+- /pages/index/index
+?        ^^^ ^
++ /pages/user/index
+?        ^^ ^
+

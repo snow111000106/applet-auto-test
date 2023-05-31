@@ -1,0 +1,85 @@
+ERROR 2023-05-31 14:18:07,449 assertbase.py _get_error_info 282 self._outcome is None, maybe a class error
+ERROR 2023-05-31 14:18:07,451 assertbase.py _get_stack_info 342 <bound method MiniTest._miniClassSetUp of <class 'testcase.test_login.LoginPageTest'>>
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 662, in connect_dev_tool
+    self.connection = Connection.create(
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 169, in create
+    instance = cls(uri, *args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 209, in __init__
+    self._connect()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 351, in _connect
+    raise error_callback.result
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_app.py", line 327, in run_forever
+    self.sock.connect(
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_core.py", line 244, in connect
+    self.sock, addrs = connect(url, self.sock_opt, proxy_info(**options),
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_http.py", line 130, in connect
+    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_http.py", line 205, in _open_socket
+    raise err
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_http.py", line 185, in _open_socket
+    sock.connect(address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 620, in launch_dev_tool
+    self.connect_dev_tool()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 682, in connect_dev_tool
+    raise MiniConnectError(
+minium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 662, in connect_dev_tool
+    self.connection = Connection.create(
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 169, in create
+    instance = cls(uri, *args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 209, in __init__
+    self._connect()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\connection.py", line 351, in _connect
+    raise error_callback.result
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_app.py", line 327, in run_forever
+    self.sock.connect(
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_core.py", line 244, in connect
+    self.sock, addrs = connect(url, self.sock_opt, proxy_info(**options),
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_http.py", line 130, in connect
+    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_http.py", line 205, in _open_socket
+    raise err
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\websocket\_http.py", line 185, in _open_socket
+    sock.connect(address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\suite.py", line 64, in _handleClassSetUp
+    _miniClassSetUp()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\minitest.py", line 255, in _miniClassSetUp
+    native, mini, miniprogram = init_miniprogram(cls.CONFIG)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\minitest.py", line 147, in init_miniprogram
+    mini = get_minium(cfg)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\minitest.py", line 112, in get_minium
+    g_minium = minium.miniprogram.get_minium_driver(conf=cfg, native=g_native)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\__init__.py", line 28, in get_minium_driver
+    return APP[application](conf, *args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 117, in __init__
+    self.launch_weapp()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 462, in launch_weapp
+    self.launch_dev_tool()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 650, in launch_dev_tool
+    self.connect_dev_tool()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 160, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\miniprogram\wx_minium.py", line 682, in connect_dev_tool
+    raise MiniConnectError(
+minium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...

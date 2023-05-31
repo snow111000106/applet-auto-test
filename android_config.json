@@ -1,0 +1,19 @@
+{
+  "project_path": "C:\\Users\\CDS-DN268\\PycharmProjects\\rb-wxapp\\dist\\build\\mp-weixin",
+  "dev_tool_path": "E:\\wx\\微信web开发者工具\\cli.bat",
+  "debug_mode": "debug",
+  "enable_app_log": true,
+  "platform": "Android",
+  "test_port": 9420,
+  "close_ide": true,
+  "use_push": true,
+  "auto_relaunch": true,
+  "remote_connect_timeout": 180,
+  "outputs": "outputs",
+  "assert_capture": true,
+  "auto_authorize": true,
+  "device_desire": {
+    "serial": "37KNW18802000695",
+    "uiautomator_version": 2
+  }
+}

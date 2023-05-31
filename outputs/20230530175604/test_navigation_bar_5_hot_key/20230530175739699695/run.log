@@ -1,0 +1,30 @@
+INFO  2023-05-30 17:57:39,700 minitest.py _miniSetUp      341 =========Current case: test_navigation_bar_5_hot_key=========
+INFO  2023-05-30 17:57:39,700 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_home, case info: HomePageTest.test_navigation_bar_5_hot_key
+INFO  2023-05-30 17:57:39,701 basenative.py wrapper         25  call WXAndroidNative.check_connection
+INFO  2023-05-30 17:57:39,731 basenative.py wrapper         29  call WXAndroidNative.check_connection end
+INFO  2023-05-30 17:57:39,732 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-30 17:57:39,732 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+DEBUG 2023-05-30 17:57:39,820 androidnative.py _get_current_activity 927     mResumedActivity: ActivityRecord{59a0932 u0 com.tencent.mm/.plugin.appbrand.ui.AppBrandUI t110}
+
+INFO  2023-05-30 17:57:39,822 androidnative.py _get_current_activity 932 current activity is com.tencent.mm/.plugin.appbrand.ui.AppBrandUI
+INFO  2023-05-30 17:57:40,100 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-30 17:57:40,101 connection.py _safely_send    417 ASYNC_SEND > {"id":"637227b3-345d-4372-800e-2e5eeae05818","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-30 17:57:41,812 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","rawPath":"pages/index/index.html","query":{},"openType":"switchTab","__ts__":1685440660483,"webviewId":674534409},1685440660494]}}
+DEBUG 2023-05-30 17:57:41,813 connection.py _on_message     652 RECV < {"id":"637227b3-345d-4372-800e-2e5eeae05818","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-30 17:57:41,814 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'rawPath': 'pages/index/index.html', 'query': {}, 'openType': 'switchTab', '__ts__': 1685440660483, 'webviewId': 674534409}, 1685440660494]}
+INFO  2023-05-30 17:57:41,815 connection.py _handle_async_msg 688 received async msg: 637227b3-345d-4372-800e-2e5eeae05818
+INFO  2023-05-30 17:57:41,817 minitest.py capture         673 capture setup.png
+INFO  2023-05-30 17:57:41,818 basenative.py wrapper         25  call WXAndroidNative.screen_shot
+INFO  2023-05-30 17:57:42,140 basenative.py wrapper         29  call WXAndroidNative.screen_shot end
+INFO  2023-05-30 17:57:42,141 minitest.py _miniSetUp      394 =========case: test_navigation_bar_5_hot_key start=========
+DEBUG 2023-05-30 17:57:42,142 connection.py _safely_send    417 ASYNC_SEND > {"id":"1ea7792a-7e54-4cc3-a0ed-475c259e3531","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-30 17:57:43,147 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","rawPath":"pages/index/index.html","query":{},"openType":"switchTab","__ts__":1685440662280,"webviewId":674534409},1685440662288]}}
+INFO  2023-05-30 17:57:43,148 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'rawPath': 'pages/index/index.html', 'query': {}, 'openType': 'switchTab', '__ts__': 1685440662280, 'webviewId': 674534409}, 1685440662288]}
+DEBUG 2023-05-30 17:57:43,430 connection.py _on_message     652 RECV < {"id":"1ea7792a-7e54-4cc3-a0ed-475c259e3531","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-30 17:57:43,431 connection.py _handle_async_msg 688 received async msg: 1ea7792a-7e54-4cc3-a0ed-475c259e3531
+DEBUG 2023-05-30 17:57:43,432 minitest.py _miniTearDown   587 =========Current case Down: test_navigation_bar_5_hot_key=========
+INFO  2023-05-30 17:57:43,432 minitest.py capture         673 capture teardown.png
+INFO  2023-05-30 17:57:43,433 basenative.py wrapper         25  call WXAndroidNative.screen_shot
+INFO  2023-05-30 17:57:43,765 basenative.py wrapper         29  call WXAndroidNative.screen_shot end
+INFO  2023-05-30 17:57:43,766 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-30 17:57:43,766 basenative.py wrapper         29  call BaseNative.get_start_up end

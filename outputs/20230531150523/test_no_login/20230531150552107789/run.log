@@ -1,0 +1,95 @@
+INFO  2023-05-31 15:05:52,109 minitest.py _miniSetUp      341 =========Current case: test_no_login=========
+INFO  2023-05-31 15:05:52,111 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_login, case info: LoginPageTest.test_no_login
+INFO  2023-05-31 15:05:52,112 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-31 15:05:52,113 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-31 15:05:52,114 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-31 15:05:52,115 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-31 15:05:52,116 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-31 15:05:52,118 connection.py _safely_send    417 ASYNC_SEND > {"id":"128fa4fa-22a0-4566-80ad-074ad05c40cb","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 15:05:52,149 connection.py _on_message     652 RECV < {"id":"128fa4fa-22a0-4566-80ad-074ad05c40cb","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 15:05:52,154 connection.py _handle_async_msg 688 received async msg: 128fa4fa-22a0-4566-80ad-074ad05c40cb
+DEBUG 2023-05-31 15:05:52,341 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":2,"path":"pages/index/index","query":{},"openType":"switchTab","__ts__":1685516752339},1685516752340]}}
+INFO  2023-05-31 15:05:52,345 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 2, 'path': 'pages/index/index', 'query': {}, 'openType': 'switchTab', '__ts__': 1685516752339}, 1685516752340]}
+INFO  2023-05-31 15:05:52,345 minitest.py capture         673 capture setup.png
+INFO  2023-05-31 15:05:52,347 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 15:05:52,348 connection.py _safely_send    417 SEND > {"id":"de501cda-444a-4e63-9b06-e2b3cb804c74","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 15:05:52,450 connection.py _on_message     650 RECV < {"id":"de501cda-444a-4e63-9b06-e2b3cb804c74","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 15:05:52,452 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 15:05:52,454 minitest.py _miniSetUp      394 =========case: test_no_login start=========
+DEBUG 2023-05-31 15:05:52,454 connection.py _safely_send    417 SEND > {"id":"f08340d7-d05e-4a8f-8c83-f4ec3fda8944","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 15:05:52,457 connection.py _on_message     652 RECV < {"id":"f08340d7-d05e-4a8f-8c83-f4ec3fda8944","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+DEBUG 2023-05-31 15:05:52,459 connection.py _safely_send    417 SEND > {"id":"31c6b169-c6e8-4c1f-a10d-f2a4922e0897","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 15:05:52,461 connection.py _on_message     652 RECV < {"id":"31c6b169-c6e8-4c1f-a10d-f2a4922e0897","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+DEBUG 2023-05-31 15:05:52,463 connection.py _safely_send    417 SEND > {"id":"1c9119ba-3586-44c7-936f-ae472be6821c","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:52,468 connection.py _on_message     652 RECV < {"id":"1c9119ba-3586-44c7-936f-ae472be6821c","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:52,469 connection.py _on_message     660 [1c9119ba-3586-44c7-936f-ae472be6821c]: no such element
+DEBUG 2023-05-31 15:05:53,484 connection.py _safely_send    417 SEND > {"id":"735190ca-9086-42fb-9c49-ac0810e122f9","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:53,489 connection.py _on_message     652 RECV < {"id":"735190ca-9086-42fb-9c49-ac0810e122f9","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:53,490 connection.py _on_message     660 [735190ca-9086-42fb-9c49-ac0810e122f9]: no such element
+DEBUG 2023-05-31 15:05:54,492 connection.py _safely_send    417 SEND > {"id":"07f98467-dd54-4496-94da-33e694bd4bf7","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:54,497 connection.py _on_message     652 RECV < {"id":"07f98467-dd54-4496-94da-33e694bd4bf7","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:54,498 connection.py _on_message     660 [07f98467-dd54-4496-94da-33e694bd4bf7]: no such element
+DEBUG 2023-05-31 15:05:55,512 connection.py _safely_send    417 SEND > {"id":"019596c5-ddfc-48b3-a05d-5f2f54358fb3","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:55,517 connection.py _on_message     652 RECV < {"id":"019596c5-ddfc-48b3-a05d-5f2f54358fb3","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:55,518 connection.py _on_message     660 [019596c5-ddfc-48b3-a05d-5f2f54358fb3]: no such element
+DEBUG 2023-05-31 15:05:56,524 connection.py _safely_send    417 SEND > {"id":"76d49911-6ec1-49f9-b250-bb8279da774c","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:56,528 connection.py _on_message     652 RECV < {"id":"76d49911-6ec1-49f9-b250-bb8279da774c","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:56,530 connection.py _on_message     660 [76d49911-6ec1-49f9-b250-bb8279da774c]: no such element
+DEBUG 2023-05-31 15:05:57,542 connection.py _safely_send    417 SEND > {"id":"e4d8a5d3-28c0-4d56-8a52-5270c261ca5c","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:57,546 connection.py _on_message     652 RECV < {"id":"e4d8a5d3-28c0-4d56-8a52-5270c261ca5c","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:57,547 connection.py _on_message     660 [e4d8a5d3-28c0-4d56-8a52-5270c261ca5c]: no such element
+DEBUG 2023-05-31 15:05:58,549 connection.py _safely_send    417 SEND > {"id":"67f85c72-c381-4c2a-986d-623e94b61fba","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:58,553 connection.py _on_message     652 RECV < {"id":"67f85c72-c381-4c2a-986d-623e94b61fba","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:58,554 connection.py _on_message     660 [67f85c72-c381-4c2a-986d-623e94b61fba]: no such element
+DEBUG 2023-05-31 15:05:59,560 connection.py _safely_send    417 SEND > {"id":"b0251083-91ae-45c4-9b20-bf31f59f98cd","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:05:59,564 connection.py _on_message     652 RECV < {"id":"b0251083-91ae-45c4-9b20-bf31f59f98cd","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:05:59,565 connection.py _on_message     660 [b0251083-91ae-45c4-9b20-bf31f59f98cd]: no such element
+DEBUG 2023-05-31 15:06:00,568 connection.py _safely_send    417 SEND > {"id":"84ca6418-74a8-4436-aab1-0415c6db27dd","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:00,572 connection.py _on_message     652 RECV < {"id":"84ca6418-74a8-4436-aab1-0415c6db27dd","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:00,574 connection.py _on_message     660 [84ca6418-74a8-4436-aab1-0415c6db27dd]: no such element
+DEBUG 2023-05-31 15:06:01,591 connection.py _safely_send    417 SEND > {"id":"a50dff02-6775-4823-97b3-78fb151d7a61","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:01,597 connection.py _on_message     652 RECV < {"id":"a50dff02-6775-4823-97b3-78fb151d7a61","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:01,599 connection.py _on_message     660 [a50dff02-6775-4823-97b3-78fb151d7a61]: no such element
+DEBUG 2023-05-31 15:06:02,601 connection.py _safely_send    417 SEND > {"id":"9b489254-7c35-44a9-b021-252c08555f96","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:02,606 connection.py _on_message     652 RECV < {"id":"9b489254-7c35-44a9-b021-252c08555f96","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:02,607 connection.py _on_message     660 [9b489254-7c35-44a9-b021-252c08555f96]: no such element
+DEBUG 2023-05-31 15:06:03,624 connection.py _safely_send    417 SEND > {"id":"c4e40f43-cf92-4632-920c-5b5cbcc8d512","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:03,629 connection.py _on_message     652 RECV < {"id":"c4e40f43-cf92-4632-920c-5b5cbcc8d512","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:03,630 connection.py _on_message     660 [c4e40f43-cf92-4632-920c-5b5cbcc8d512]: no such element
+DEBUG 2023-05-31 15:06:04,637 connection.py _safely_send    417 SEND > {"id":"4431c9e4-f2a3-4693-864d-4792f39d5ae7","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:04,643 connection.py _on_message     652 RECV < {"id":"4431c9e4-f2a3-4693-864d-4792f39d5ae7","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:04,645 connection.py _on_message     660 [4431c9e4-f2a3-4693-864d-4792f39d5ae7]: no such element
+DEBUG 2023-05-31 15:06:05,657 connection.py _safely_send    417 SEND > {"id":"f89f65f1-8c2c-4b44-8ba5-f77bc4da58c1","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:05,661 connection.py _on_message     652 RECV < {"id":"f89f65f1-8c2c-4b44-8ba5-f77bc4da58c1","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:05,662 connection.py _on_message     660 [f89f65f1-8c2c-4b44-8ba5-f77bc4da58c1]: no such element
+DEBUG 2023-05-31 15:06:06,665 connection.py _safely_send    417 SEND > {"id":"6bf05ad2-3147-4299-b2b0-3f86ad4bc263","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:06,669 connection.py _on_message     652 RECV < {"id":"6bf05ad2-3147-4299-b2b0-3f86ad4bc263","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:06,670 connection.py _on_message     660 [6bf05ad2-3147-4299-b2b0-3f86ad4bc263]: no such element
+DEBUG 2023-05-31 15:06:07,672 connection.py _safely_send    417 SEND > {"id":"e6ae774c-7728-463f-9165-0e3b6a2d4417","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:07,677 connection.py _on_message     652 RECV < {"id":"e6ae774c-7728-463f-9165-0e3b6a2d4417","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:07,678 connection.py _on_message     660 [e6ae774c-7728-463f-9165-0e3b6a2d4417]: no such element
+DEBUG 2023-05-31 15:06:08,683 connection.py _safely_send    417 SEND > {"id":"9dea3cac-5cdd-4601-a45b-5c47f88ab713","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:08,688 connection.py _on_message     652 RECV < {"id":"9dea3cac-5cdd-4601-a45b-5c47f88ab713","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:08,689 connection.py _on_message     660 [9dea3cac-5cdd-4601-a45b-5c47f88ab713]: no such element
+DEBUG 2023-05-31 15:06:09,695 connection.py _safely_send    417 SEND > {"id":"180369be-0a02-42e2-9002-18a966e49c93","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:09,700 connection.py _on_message     652 RECV < {"id":"180369be-0a02-42e2-9002-18a966e49c93","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:09,702 connection.py _on_message     660 [180369be-0a02-42e2-9002-18a966e49c93]: no such element
+DEBUG 2023-05-31 15:06:10,710 connection.py _safely_send    417 SEND > {"id":"5f0e461a-10d1-4d19-9bf9-76d8b3c3bfc2","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:10,714 connection.py _on_message     652 RECV < {"id":"5f0e461a-10d1-4d19-9bf9-76d8b3c3bfc2","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:10,715 connection.py _on_message     660 [5f0e461a-10d1-4d19-9bf9-76d8b3c3bfc2]: no such element
+DEBUG 2023-05-31 15:06:11,719 connection.py _safely_send    417 SEND > {"id":"03c52e10-6a1b-445d-8b99-a4dbcb57ca49","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":2}}
+DEBUG 2023-05-31 15:06:11,724 connection.py _on_message     652 RECV < {"id":"03c52e10-6a1b-445d-8b99-a4dbcb57ca49","error":{"message":"no such element"}}
+ERROR 2023-05-31 15:06:11,725 connection.py _on_message     660 [03c52e10-6a1b-445d-8b99-a4dbcb57ca49]: no such element
+INFO  2023-05-31 15:06:12,743 minitest.py capture         673 capture assertEqual-success.png
+INFO  2023-05-31 15:06:12,744 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 15:06:12,745 connection.py _safely_send    417 SEND > {"id":"d1233e1a-90d2-4f07-94d1-e843cdeb6d3f","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 15:06:12,870 connection.py _on_message     650 RECV < {"id":"d1233e1a-90d2-4f07-94d1-e843cdeb6d3f","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 15:06:12,873 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-05-31 15:06:12,875 minitest.py _miniTearDown   587 =========Current case Down: test_no_login=========
+INFO  2023-05-31 15:06:12,875 minitest.py capture         673 capture teardown.png
+INFO  2023-05-31 15:06:12,876 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 15:06:12,877 connection.py _safely_send    417 SEND > {"id":"3ff1463d-9f3f-4ad1-b32a-45b7597651b0","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 15:06:12,974 connection.py _on_message     650 RECV < {"id":"3ff1463d-9f3f-4ad1-b32a-45b7597651b0","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 15:06:12,978 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 15:06:12,981 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-31 15:06:12,984 basenative.py wrapper         29  call BaseNative.get_start_up end

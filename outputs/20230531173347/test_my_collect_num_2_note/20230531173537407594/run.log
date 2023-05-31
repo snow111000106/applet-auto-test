@@ -1,0 +1,40 @@
+INFO  2023-05-31 17:35:37,408 minitest.py _miniSetUp      341 =========Current case: test_my_collect_num_2_note=========
+INFO  2023-05-31 17:35:37,409 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.home.test_home, case info: HomePageTest.test_my_collect_num_2_note
+INFO  2023-05-31 17:35:37,410 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-31 17:35:37,411 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-31 17:35:37,412 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-31 17:35:37,413 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-31 17:35:37,413 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-31 17:35:37,415 connection.py _safely_send    417 ASYNC_SEND > {"id":"58366c2b-88e0-4dbd-920c-23022deb88ca","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 17:35:37,434 connection.py _on_message     652 RECV < {"id":"58366c2b-88e0-4dbd-920c-23022deb88ca","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 17:35:37,436 connection.py _handle_async_msg 688 received async msg: 58366c2b-88e0-4dbd-920c-23022deb88ca
+INFO  2023-05-31 17:35:37,443 minitest.py capture         673 capture setup.png
+INFO  2023-05-31 17:35:37,445 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 17:35:37,447 connection.py _safely_send    417 SEND > {"id":"750f6a00-eb7f-474f-b5e8-1ea40f44b099","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 17:35:37,560 connection.py _on_message     650 RECV < {"id":"750f6a00-eb7f-474f-b5e8-1ea40f44b099","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 17:35:37,562 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 17:35:37,563 minitest.py _miniSetUp      394 =========case: test_my_collect_num_2_note start=========
+DEBUG 2023-05-31 17:35:37,564 connection.py _safely_send    417 ASYNC_SEND > {"id":"45402eb4-b1ba-4dcf-ac7e-4f1546c8a08b","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 17:35:37,585 connection.py _on_message     652 RECV < {"id":"45402eb4-b1ba-4dcf-ac7e-4f1546c8a08b","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 17:35:37,588 connection.py _handle_async_msg 688 received async msg: 45402eb4-b1ba-4dcf-ac7e-4f1546c8a08b
+DEBUG 2023-05-31 17:35:52,592 connection.py _safely_send    417 SEND > {"id":"6e07a214-bfd8-411d-b936-a45a806d52d4","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 17:35:52,595 connection.py _on_message     652 RECV < {"id":"6e07a214-bfd8-411d-b936-a45a806d52d4","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+DEBUG 2023-05-31 17:35:52,597 connection.py _safely_send    417 SEND > {"id":"9a6d2de9-c2b4-4495-aaf3-b31f5f0c9142","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 17:35:52,599 connection.py _on_message     652 RECV < {"id":"9a6d2de9-c2b4-4495-aaf3-b31f5f0c9142","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+DEBUG 2023-05-31 17:35:52,600 connection.py _safely_send    417 SEND > {"id":"8c3b9503-8565-4e28-8de1-126d31ae9965","method":"Page.getElementByXpath","params":{"selector":"/view/view[3]/info-count/view/view[1]/view/view[2]/text[1]","pageId":2}}
+DEBUG 2023-05-31 17:35:52,604 connection.py _on_message     652 RECV < {"id":"8c3b9503-8565-4e28-8de1-126d31ae9965","result":{"elementId":"0abc58b9-bd90-41f4-87e4-2f3374cddab6","tagName":"text"}}
+DEBUG 2023-05-31 17:35:52,605 connection.py _safely_send    417 SEND > {"id":"9cb1dcda-58e2-4243-bbb7-3af64883dfa0","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"0abc58b9-bd90-41f4-87e4-2f3374cddab6","pageId":2}}
+DEBUG 2023-05-31 17:35:52,608 connection.py _on_message     652 RECV < {"id":"9cb1dcda-58e2-4243-bbb7-3af64883dfa0","result":{"properties":["8"]}}
+INFO  2023-05-31 17:35:52,622 minitest.py capture         673 capture assertEqual-success.png
+INFO  2023-05-31 17:35:52,623 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 17:35:52,625 connection.py _safely_send    417 SEND > {"id":"8ce29d50-f456-482e-9870-78ab03b6b9e1","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 17:35:52,734 connection.py _on_message     650 RECV < {"id":"8ce29d50-f456-482e-9870-78ab03b6b9e1","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 17:35:52,737 basenative.py wrapper         29  call IdeNative.screen_shot end
+DEBUG 2023-05-31 17:35:52,738 minitest.py _miniTearDown   587 =========Current case Down: test_my_collect_num_2_note=========
+INFO  2023-05-31 17:35:52,740 minitest.py capture         673 capture teardown.png
+INFO  2023-05-31 17:35:52,741 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 17:35:52,741 connection.py _safely_send    417 SEND > {"id":"2caea307-931a-49dc-9153-0bd6d9c88c5f","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 17:35:52,835 connection.py _on_message     650 RECV < {"id":"2caea307-931a-49dc-9153-0bd6d9c88c5f","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 17:35:52,838 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 17:35:52,839 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-31 17:35:52,840 basenative.py wrapper         29  call BaseNative.get_start_up end

@@ -1,0 +1,96 @@
+{
+    "case_name": "test_rank_5_hot_key",
+    "run_time": "20230531 14:21:10",
+    "test_type": "HomePageTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 121, in run\n    self._callSetUp()\n  File \"D:\\python39\\lib\\unittest\\case.py\", line 547, in _callSetUp\n    self.setUp()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\testcase\\test_home.py\", line 26, in setUp\n    self.homepage.navigate_to_open(route.home_page)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\page\\BasePage.py\", line 39, in navigate_to_open\n    self.mini.app.navigate_to(route)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 160, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\app.py\", line 523, in navigate_to\n    page = self._change_route_async(\"navigateTo\", url, is_wait_url_change)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\app.py\", line 758, in _change_route_async\n    cmd.get_open_result(wait_timeout)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\app.py\", line 123, in get_open_result\n    return self._open_callback.get_result()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\callback.py\", line 126, in get_result\n    return self._waiter.result()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\callback.py\", line 105, in wait_called\n    return self._loop.run_coroutine(\n  File \"D:\\python39\\lib\\concurrent\\futures\\_base.py\", line 446, in result\n    return self.__get_result()\n  File \"D:\\python39\\lib\\concurrent\\futures\\_base.py\", line 391, in __get_result\n    raise self._exception\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\utils\\utils.py\", line 409, in async_wait\n    return fut.result()\nminium.framework.exception.MiniAppError: can not navigateTo a tabbar page\n",
+    "start_timestamp": 1685514071.0633206,
+    "is_failure": false,
+    "is_error": true,
+    "module": "C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_home",
+    "package": "testcase",
+    "failed_line_num": 26,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 520,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "2.31.1",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "MiniAppError",
+    "error_value": "can not navigateTo a tabbar page",
+    "error_stages": [
+        "setUp"
+    ],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/index/index",
+            "path": "images\\setup.png",
+            "ts": 1685514071,
+            "datetime": "2023-05-31 14:21:11"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/index/index",
+            "path": "images\\teardown.png",
+            "ts": 1685514071,
+            "datetime": "2023-05-31 14:21:11"
+        }
+    ],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "perf_data": "{\"startup\": 0, \"avg_cpu\": 0, \"max_cpu\": 0, \"cpu_data_list\": [], \"avg_mem\": 0, \"max_mem\": 0, \"mem_data_list\": [], \"avg_fps\": 0, \"min_fps_rt\": 0, \"fps_data_list\": [], \"fps_time_series_list\": [], \"cpu_time_series_list\": [], \"mem_time_series_list\": []}",
+    "weapp_log_path": "weapp.log",
+    "request_log_path": "request.log",
+    "stop_timestamp": 1685514071.163408,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    def setUp(self):\n",
+            "        self.homepage.navigate_to_open(route.home_page)\n"
+        ],
+        "start": 25
+    },
+    "filename": "result.json"
+}

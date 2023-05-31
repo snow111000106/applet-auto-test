@@ -1,0 +1,20 @@
+{"type": "log", "args": ["wxLogin"], "dt": "2023-05-31 14:21:29"}
+{"type": "log", "args": ["loginAfter"], "dt": "2023-05-31 14:21:32"}
+{"type": "log", "args": ["/pages/index/index"], "dt": "2023-05-31 14:21:32"}
+{"type": "error", "args": ["routeDone with a webviewId 6 that is not the current page"], "dt": "2023-05-31 14:21:32"}
+{"type": "warn", "args": ["[Component] property \"searchIcon\" of \"node-modules/uview-ui/components/u-search/u-search\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:32"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}
+{"type": "warn", "args": ["[Component] property \"src\" of \"components/mix-img-lazy/mix-img-lazy\" received type-uncompatible value: expected <String> but get null value. Use empty string instead."], "dt": "2023-05-31 14:21:33"}

@@ -1,0 +1,4 @@
+{"type": "log", "args": ["wxLogin"], "dt": "2023-05-31 15:44:06"}
+{"type": "log", "args": ["loginAfter"], "dt": "2023-05-31 15:44:07"}
+{"type": "log", "args": ["/pages/user/index"], "dt": "2023-05-31 15:44:07"}
+{"type": "error", "args": ["routeDone with a webviewId 10 that is not the current page"], "dt": "2023-05-31 15:44:07"}

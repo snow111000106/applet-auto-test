@@ -1,0 +1,89 @@
+INFO  2023-05-31 18:35:36,863 minitest.py _miniSetUp      341 =========Current case: test_fans_inc_rank=========
+INFO  2023-05-31 18:35:36,864 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.home.test_home, case info: HomePageTest.test_fans_inc_rank
+INFO  2023-05-31 18:35:36,865 basenative.py wrapper         25  call BaseNative.check_connection
+INFO  2023-05-31 18:35:36,867 basenative.py wrapper         29  call BaseNative.check_connection end
+INFO  2023-05-31 18:35:36,868 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-31 18:35:36,869 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+INFO  2023-05-31 18:35:36,870 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-31 18:35:36,871 connection.py _safely_send    417 ASYNC_SEND > {"id":"7eb2e0ab-83d1-4b72-8164-d94ffe9e7954","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 18:35:36,916 connection.py _on_message     652 RECV < {"id":"7eb2e0ab-83d1-4b72-8164-d94ffe9e7954","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 18:35:36,918 connection.py _handle_async_msg 688 received async msg: 7eb2e0ab-83d1-4b72-8164-d94ffe9e7954
+INFO  2023-05-31 18:35:36,986 basenative.py wrapper         25  call IdeNative.allow_authorize
+INFO  2023-05-31 18:35:36,987 basenative.py wrapper         25  call IdeNative.send
+DEBUG 2023-05-31 18:35:36,988 connection.py _safely_send    417 SEND > {"id":"92c37bf5-77c3-4c2e-8bae-1a6fde4e97f1","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+DEBUG 2023-05-31 18:35:36,990 connection.py _on_message     652 RECV < {"id":"92c37bf5-77c3-4c2e-8bae-1a6fde4e97f1","result":{"error":{"message":"authorizeAllow failed"}}}
+WARNI 2023-05-31 18:35:36,992 idenative.py send            65  handle authorizeAllow error: authorizeAllow failed
+INFO  2023-05-31 18:35:36,992 basenative.py wrapper         29  call IdeNative.send end
+INFO  2023-05-31 18:35:36,994 basenative.py wrapper         28  IdeNative.allow_authorize return {'id': '92c37bf5-77c3-4c2e-8bae-1a6fde4e97f1', 'result': {'error': {'message': 'authorizeAllow failed'}}}
+INFO  2023-05-31 18:35:36,995 basenative.py wrapper         29  call IdeNative.allow_authorize end
+DEBUG 2023-05-31 18:35:37,085 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":2,"path":"pages/index/index","query":{},"openType":"switchTab","__ts__":1685529337084},1685529337085]}}
+INFO  2023-05-31 18:35:37,091 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 2, 'path': 'pages/index/index', 'query': {}, 'openType': 'switchTab', '__ts__': 1685529337084}, 1685529337085]}
+INFO  2023-05-31 18:35:37,092 minitest.py capture         673 capture setup.png
+INFO  2023-05-31 18:35:37,094 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 18:35:37,096 connection.py _safely_send    417 SEND > {"id":"841f7e3c-9b44-46d9-b3d2-96d0f8d61501","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 18:35:37,206 connection.py _on_message     650 RECV < {"id":"841f7e3c-9b44-46d9-b3d2-96d0f8d61501","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 18:35:37,209 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 18:35:37,210 minitest.py _miniSetUp      394 =========case: test_fans_inc_rank start=========
+DEBUG 2023-05-31 18:35:37,212 connection.py _safely_send    417 ASYNC_SEND > {"id":"b4bba0a7-d6af-42b2-aa14-c022dc370aea","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-31 18:35:37,234 connection.py _on_message     652 RECV < {"id":"b4bba0a7-d6af-42b2-aa14-c022dc370aea","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-31 18:35:37,237 connection.py _handle_async_msg 688 received async msg: b4bba0a7-d6af-42b2-aa14-c022dc370aea
+INFO  2023-05-31 18:35:38,009 basenative.py wrapper         25  call IdeNative.allow_authorize
+INFO  2023-05-31 18:35:38,011 basenative.py wrapper         25  call IdeNative.send
+DEBUG 2023-05-31 18:35:38,012 connection.py _safely_send    417 SEND > {"id":"dd6ee2af-abc6-4ab4-bc9c-f1a679981dfa","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+DEBUG 2023-05-31 18:35:38,014 connection.py _on_message     652 RECV < {"id":"dd6ee2af-abc6-4ab4-bc9c-f1a679981dfa","result":{"error":{"message":"authorizeAllow failed"}}}
+WARNI 2023-05-31 18:35:38,015 idenative.py send            65  handle authorizeAllow error: authorizeAllow failed
+INFO  2023-05-31 18:35:38,016 basenative.py wrapper         29  call IdeNative.send end
+INFO  2023-05-31 18:35:38,017 basenative.py wrapper         28  IdeNative.allow_authorize return {'id': 'dd6ee2af-abc6-4ab4-bc9c-f1a679981dfa', 'result': {'error': {'message': 'authorizeAllow failed'}}}
+INFO  2023-05-31 18:35:38,018 basenative.py wrapper         29  call IdeNative.allow_authorize end
+INFO  2023-05-31 18:35:39,020 basenative.py wrapper         25  call IdeNative.allow_authorize
+INFO  2023-05-31 18:35:39,021 basenative.py wrapper         25  call IdeNative.send
+DEBUG 2023-05-31 18:35:39,023 connection.py _safely_send    417 SEND > {"id":"4746e54c-29a8-42a1-b53b-78242d312a83","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+DEBUG 2023-05-31 18:35:39,024 connection.py _on_message     652 RECV < {"id":"4746e54c-29a8-42a1-b53b-78242d312a83","result":{"error":{"message":"authorizeAllow failed"}}}
+WARNI 2023-05-31 18:35:39,025 idenative.py send            65  handle authorizeAllow error: authorizeAllow failed
+INFO  2023-05-31 18:35:39,026 basenative.py wrapper         29  call IdeNative.send end
+INFO  2023-05-31 18:35:39,027 basenative.py wrapper         28  IdeNative.allow_authorize return {'id': '4746e54c-29a8-42a1-b53b-78242d312a83', 'result': {'error': {'message': 'authorizeAllow failed'}}}
+INFO  2023-05-31 18:35:39,028 basenative.py wrapper         29  call IdeNative.allow_authorize end
+INFO  2023-05-31 18:35:40,029 basenative.py wrapper         25  call IdeNative.allow_authorize
+INFO  2023-05-31 18:35:40,030 basenative.py wrapper         25  call IdeNative.send
+DEBUG 2023-05-31 18:35:40,031 connection.py _safely_send    417 SEND > {"id":"533467b8-fd72-4969-b787-059423a77c6a","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+DEBUG 2023-05-31 18:35:40,033 connection.py _on_message     652 RECV < {"id":"533467b8-fd72-4969-b787-059423a77c6a","result":{"error":{"message":"authorizeAllow failed"}}}
+WARNI 2023-05-31 18:35:40,034 idenative.py send            65  handle authorizeAllow error: authorizeAllow failed
+INFO  2023-05-31 18:35:40,035 basenative.py wrapper         29  call IdeNative.send end
+INFO  2023-05-31 18:35:40,036 basenative.py wrapper         28  IdeNative.allow_authorize return {'id': '533467b8-fd72-4969-b787-059423a77c6a', 'result': {'error': {'message': 'authorizeAllow failed'}}}
+INFO  2023-05-31 18:35:40,036 basenative.py wrapper         29  call IdeNative.allow_authorize end
+INFO  2023-05-31 18:35:41,050 basenative.py wrapper         25  call IdeNative.allow_authorize
+INFO  2023-05-31 18:35:41,051 basenative.py wrapper         25  call IdeNative.send
+DEBUG 2023-05-31 18:35:41,053 connection.py _safely_send    417 SEND > {"id":"ceccdd7c-ddbe-4ede-88fe-873651aebb28","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+DEBUG 2023-05-31 18:35:41,054 connection.py _on_message     652 RECV < {"id":"ceccdd7c-ddbe-4ede-88fe-873651aebb28","result":{"error":{"message":"authorizeAllow failed"}}}
+WARNI 2023-05-31 18:35:41,056 idenative.py send            65  handle authorizeAllow error: authorizeAllow failed
+INFO  2023-05-31 18:35:41,056 basenative.py wrapper         29  call IdeNative.send end
+INFO  2023-05-31 18:35:41,057 basenative.py wrapper         28  IdeNative.allow_authorize return {'id': 'ceccdd7c-ddbe-4ede-88fe-873651aebb28', 'result': {'error': {'message': 'authorizeAllow failed'}}}
+INFO  2023-05-31 18:35:41,058 basenative.py wrapper         29  call IdeNative.allow_authorize end
+DEBUG 2023-05-31 18:35:42,074 basenative.py __op_auto_authorize 727 after auto_authorize_callback, False. flag: True
+DEBUG 2023-05-31 18:35:52,253 connection.py _safely_send    417 SEND > {"id":"df16d0c3-f560-4de2-ab0c-9c2932f3e1a7","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-31 18:35:52,257 connection.py _on_message     652 RECV < {"id":"df16d0c3-f560-4de2-ab0c-9c2932f3e1a7","result":{"pageId":2,"path":"pages/index/index","query":{}}}
+DEBUG 2023-05-31 18:35:52,258 minitest.py _miniTearDown   587 =========Current case Down: test_fans_inc_rank=========
+INFO  2023-05-31 18:35:52,260 minitest.py capture         673 capture teardown.png
+INFO  2023-05-31 18:35:52,260 basenative.py wrapper         25  call IdeNative.screen_shot
+DEBUG 2023-05-31 18:35:52,261 connection.py _safely_send    417 SEND > {"id":"b2eac7b0-f20a-45b5-908b-127a3715dc10","method":"App.captureScreenshot","params":{}}
+DEBUG 2023-05-31 18:35:52,359 connection.py _on_message     650 RECV < {"id":"b2eac7b0-f20a-45b5-908b-127a3715dc10","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAeAAAAMMCAIAAAAEr+MSAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvWl0HEeW73dvRGRW1gYUdhALQVLcRFIkRZGU2FqoltRSS63pnt5n5s2bxePxnPHzR/u7v9nn+Ph4OT7vPT+/M/bMs19Pz0yrR9NaKbW6SVGiSIILKG7gjh2FtQDUmpkR1x+yUCxWFQpVAMgukvE/PMEfsrIyIjMr/3nzRmQm0ol/BsZAKV3qUpe61GVNlUgn/gVAATIgAADNmjVr1lwjzAgUMEakAEGzZs2aNdcOI331KwAFwHSpS13qUpc1VTKgxb9Rs2bNmjXXECN99S4ALHo2aNasWbPmGmEGgIAciAC5Zs2aNWuuHUY6+SsgAgQgAETNmjVr1lwjzIAAGANCYFyzZs2aNdcOexE0AAMgAADNmjVr1l...
+INFO  2023-05-31 18:35:52,362 basenative.py wrapper         29  call IdeNative.screen_shot end
+INFO  2023-05-31 18:35:52,363 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-31 18:35:52,364 basenative.py wrapper         29  call BaseNative.get_start_up end
+ERROR 2023-05-31 18:35:52,370 assertbase.py _get_stack_info 342 <bound method HomePageTest.test_fans_inc_rank of <testcase.home.test_home.HomePageTest testMethod=test_fans_inc_rank>>
+Traceback (most recent call last):
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 41, in testPartExecutor
+    yield
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\case.py", line 127, in run
+    self._callTestMethod(testMethod)
+  File "D:\python39\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\testcase\home\test_home.py", line 58, in test_fans_inc_rank
+    num = self.homepage.get_fans_inc_rank_num()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\page\HomePage.py", line 79, in get_fans_inc_rank_num
+    self.slide_to_fans_inc_rank()
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\page\HomePage.py", line 74, in slide_to_fans_inc_rank
+    self.scroll(high=500)
+  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\page\BasePage.py", line 66, in scroll
+    self.mini.app.scroll_to(high=high, duration=duration)
+AttributeError: 'App' object has no attribute 'scroll_to'

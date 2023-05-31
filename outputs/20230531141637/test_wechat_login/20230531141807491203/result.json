@@ -1,0 +1,91 @@
+{
+    "case_name": "test_wechat_login",
+    "run_time": "20230531 14:18:07",
+    "test_type": "LoginPageTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 662, in connect_dev_tool\n    self.connection = Connection.create(\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 169, in create\n    instance = cls(uri, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 209, in __init__\n    self._connect()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 351, in _connect\n    raise error_callback.result\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_app.py\", line 327, in run_forever\n    self.sock.connect(\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_core.py\", line 244, in connect\n    self.sock, addrs = connect(url, self.sock_opt, proxy_info(**options),\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_http.py\", line 130, in connect\n    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_http.py\", line 205, in _open_socket\n    raise err\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_http.py\", line 185, in _open_socket\n    sock.connect(address)\nConnectionRefusedError: [WinError 10061] \u7531\u4e8e\u76ee\u6807\u8ba1\u7b97\u673a\u79ef\u6781\u62d2\u7edd\uff0c\u65e0\u6cd5\u8fde\u63a5\u3002\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 620, in launch_dev_tool\n    self.connect_dev_tool()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 160, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 682, in connect_dev_tool\n    raise MiniConnectError(\nminium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 662, in connect_dev_tool\n    self.connection = Connection.create(\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 169, in create\n    instance = cls(uri, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 209, in __init__\n    self._connect()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\connection.py\", line 351, in _connect\n    raise error_callback.result\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_app.py\", line 327, in run_forever\n    self.sock.connect(\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_core.py\", line 244, in connect\n    self.sock, addrs = connect(url, self.sock_opt, proxy_info(**options),\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_http.py\", line 130, in connect\n    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_http.py\", line 205, in _open_socket\n    raise err\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\websocket\\_http.py\", line 185, in _open_socket\n    sock.connect(address)\nConnectionRefusedError: [WinError 10061] \u7531\u4e8e\u76ee\u6807\u8ba1\u7b97\u673a\u79ef\u6781\u62d2\u7edd\uff0c\u65e0\u6cd5\u8fde\u63a5\u3002\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\suite.py\", line 64, in _handleClassSetUp\n    _miniClassSetUp()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\minitest.py\", line 255, in _miniClassSetUp\n    native, mini, miniprogram = init_miniprogram(cls.CONFIG)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\minitest.py\", line 147, in init_miniprogram\n    mini = get_minium(cfg)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\minitest.py\", line 112, in get_minium\n    g_minium = minium.miniprogram.get_minium_driver(conf=cfg, native=g_native)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\__init__.py\", line 28, in get_minium_driver\n    return APP[application](conf, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 117, in __init__\n    self.launch_weapp()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 160, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 462, in launch_weapp\n    self.launch_dev_tool()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 160, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 650, in launch_dev_tool\n    self.connect_dev_tool()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 160, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 682, in connect_dev_tool\n    raise MiniConnectError(\nminium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...\n",
+    "start_timestamp": 1685513887.4941905,
+    "is_failure": false,
+    "is_error": true,
+    "module": "C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_login",
+    "package": "testcase",
+    "failed_line_num": 255,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 520,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "8.0.5",
+            "deviceOrientation": "portrait",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "2.31.1",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 100,
+            "statusBarHeight": 20,
+            "bluetoothEnabled": true,
+            "locationEnabled": true,
+            "wifiEnabled": true,
+            "cameraAuthorized": true,
+            "locationAuthorized": true,
+            "microphoneAuthorized": true,
+            "notificationAuthorized": true,
+            "safeArea": {
+                "top": 20,
+                "left": 0,
+                "right": 320,
+                "bottom": 568,
+                "width": 320,
+                "height": 548
+            },
+            "platform": "devtools",
+            "enableDebug": false,
+            "devicePixelRatio": 2,
+            "host": {
+                "env": "WeChat"
+            },
+            "mode": "default"
+        }
+    },
+    "log_filename": "run.log",
+    "error_type": "MiniConnectError",
+    "error_value": "three times try to connect Dev tool has all fail ...",
+    "error_stages": [
+        "_miniClassSetUp"
+    ],
+    "screen_info": [],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "stop_timestamp": 1685513887.4962678,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    @classmethod\n",
+            "    def _miniClassSetUp(cls):\n",
+            "        logger.debug(\"=====================\")\n",
+            "        logger.debug(\"Testing class\uff1a%s\" % cls.__name__)\n",
+            "        logger.debug(\"=====================\")\n",
+            "        super(MiniTest, cls)._miniClassSetUp()\n",
+            "        if not cls.CONFIG.report_usage:\n",
+            "            minium.miniprogram.base_driver.minium_log.existFlag = 1\n",
+            "\n",
+            "        native, mini, miniprogram = init_miniprogram(cls.CONFIG)\n",
+            "        cls.native = native\n",
+            "        cls.mini = mini\n",
+            "        if cls.CONFIG.need_perf:  # start get perf thread\n",
+            "            cls.native.start_get_perf(timeinterval=0.8)\n",
+            "        cls.DEVICE_INFO[\"system_info\"] = miniprogram.system_info\n"
+        ],
+        "start": 246
+    },
+    "filename": "result.json"
+}

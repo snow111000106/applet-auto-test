@@ -1,0 +1,60 @@
+INFO  2023-05-18 21:17:19,290 minitest.py _miniSetUp      341 =========Current case: test_no_login=========
+INFO  2023-05-18 21:17:19,291 minitest.py _miniSetUp      344 package info: C:.Users.CDS-DN268.PycharmProjects.applet-auto.testcase.test_login, case info: LoginPageTest.test_no_login
+INFO  2023-05-18 21:17:19,291 basenative.py wrapper         25  call WXAndroidNative.check_connection
+INFO  2023-05-18 21:17:19,320 basenative.py wrapper         29  call WXAndroidNative.check_connection end
+INFO  2023-05-18 21:17:19,321 basenative.py wrapper         25  call BaseNative.back_to_miniprogram
+INFO  2023-05-18 21:17:19,321 basenative.py back_to_miniprogram 550 try back_to_miniprogram 3
+DEBUG 2023-05-18 21:17:19,443 androidnative.py _get_current_activity 927     mResumedActivity: ActivityRecord{96403c3 u0 com.tencent.mm/.plugin.appbrand.ui.AppBrandUI2 t101}
+
+INFO  2023-05-18 21:17:19,444 androidnative.py _get_current_activity 932 current activity is com.tencent.mm/.plugin.appbrand.ui.AppBrandUI2
+INFO  2023-05-18 21:17:19,544 basenative.py wrapper         29  call BaseNative.back_to_miniprogram end
+DEBUG 2023-05-18 21:17:19,545 connection.py _safely_send    417 ASYNC_SEND > {"id":"dacb2532-8670-4e63-885e-45c092fd671d","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+INFO  2023-05-18 21:17:19,927 basenative.py wrapper         28  WXAndroidNative.allow_authorize return False
+INFO  2023-05-18 21:17:19,928 basenative.py wrapper         29  call WXAndroidNative.allow_authorize end
+DEBUG 2023-05-18 21:17:20,162 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","rawPath":"pages/index/index.html","query":{},"openType":"switchTab","__ts__":1684415840532,"webviewId":140533919},1684415840541]}}
+INFO  2023-05-18 21:17:20,164 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'rawPath': 'pages/index/index.html', 'query': {}, 'openType': 'switchTab', '__ts__': 1684415840532, 'webviewId': 140533919}, 1684415840541]}
+DEBUG 2023-05-18 21:17:20,165 connection.py _on_message     652 RECV < {"id":"dacb2532-8670-4e63-885e-45c092fd671d","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-18 21:17:20,166 connection.py _handle_async_msg 688 received async msg: dacb2532-8670-4e63-885e-45c092fd671d
+INFO  2023-05-18 21:17:20,169 minitest.py capture         673 capture setup.png
+INFO  2023-05-18 21:17:20,170 basenative.py wrapper         25  call WXAndroidNative.screen_shot
+INFO  2023-05-18 21:17:20,509 basenative.py wrapper         29  call WXAndroidNative.screen_shot end
+INFO  2023-05-18 21:17:20,510 minitest.py _miniSetUp      394 =========case: test_no_login start=========
+INFO  2023-05-18 21:17:20,511 app.py     navigate_to     522 NavigateTo: /pages/common/login/index
+DEBUG 2023-05-18 21:17:20,511 connection.py _safely_send    417 ASYNC_SEND > {"id":"0917cab7-2e26-4e42-a48a-213fb40d5a86","method":"App.callWxMethod","params":{"method":"navigateTo","args":[{"url":"/pages/common/login/index"}]}}
+DEBUG 2023-05-18 21:17:20,941 basenative.py __op_auto_authorize 727 after auto_authorize_callback, True. flag: True
+DEBUG 2023-05-18 21:17:21,829 connection.py _on_message     652 RECV < {"id":"0917cab7-2e26-4e42-a48a-213fb40d5a86","result":{"result":{"errMsg":"navigateTo:ok","eventChannel":{"listener":{}}}}}
+INFO  2023-05-18 21:17:21,830 connection.py _handle_async_msg 688 received async msg: 0917cab7-2e26-4e42-a48a-213fb40d5a86
+DEBUG 2023-05-18 21:17:22,024 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/common/login/index","rawPath":"pages/common/login/index.html","query":{},"openType":"navigateTo","__ts__":1684415842461,"webviewId":936990499},1684415842471]}}
+INFO  2023-05-18 21:17:22,025 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/common/login/index', 'rawPath': 'pages/common/login/index.html', 'query': {}, 'openType': 'navigateTo', '__ts__': 1684415842461, 'webviewId': 936990499}, 1684415842471]}
+DEBUG 2023-05-18 21:17:22,025 connection.py _safely_send    417 SEND > {"id":"1d4e0120-26b7-4cfe-9647-88a264becdc2","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-18 21:17:22,737 connection.py _on_message     652 RECV < {"id":"1d4e0120-26b7-4cfe-9647-88a264becdc2","result":{"pageId":936990499,"path":"pages/common/login/index","query":{}}}
+DEBUG 2023-05-18 21:17:22,738 connection.py _safely_send    417 SEND > {"id":"f114ea4e-1f1d-4ccd-9e6f-782a363e2293","method":"App.getCurrentPage","params":{}}
+DEBUG 2023-05-18 21:17:23,333 connection.py _on_message     652 RECV < {"id":"f114ea4e-1f1d-4ccd-9e6f-782a363e2293","result":{"pageId":936990499,"path":"pages/common/login/index","query":{}}}
+DEBUG 2023-05-18 21:17:23,334 connection.py _safely_send    417 SEND > {"id":"2d572469-e443-4e11-826b-ba78a24613b2","method":"Page.getElementByXpath","params":{"selector":"/view/view[2]/view[2][contains(text(), \"\u6682\u4e0d\u767b\u5f55\")]","pageId":936990499}}
+DEBUG 2023-05-18 21:17:25,111 connection.py _on_message     652 RECV < {"id":"2d572469-e443-4e11-826b-ba78a24613b2","result":{"elementId":"a403b95c-cb02-431f-b3a2-8262a295057b","tagName":"view"}}
+DEBUG 2023-05-18 21:17:25,112 connection.py _safely_send    417 SEND > {"id":"91272b59-3ad7-4bde-be90-b9ae79d3eb5d","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"a403b95c-cb02-431f-b3a2-8262a295057b","pageId":936990499}}
+DEBUG 2023-05-18 21:17:26,588 connection.py _on_message     652 RECV < {"id":"91272b59-3ad7-4bde-be90-b9ae79d3eb5d","result":{"styles":["auto"]}}
+DEBUG 2023-05-18 21:17:26,589 connection.py _safely_send    417 SEND > {"id":"65929f2a-2c84-4259-b11f-2327331ff587","method":"Element.tap","params":{"elementId":"a403b95c-cb02-431f-b3a2-8262a295057b","pageId":936990499}}
+DEBUG 2023-05-18 21:17:26,942 connection.py _on_message     652 RECV < {"id":"65929f2a-2c84-4259-b11f-2327331ff587","result":{}}
+INFO  2023-05-18 21:17:26,943 basenative.py wrapper         25  call BaseNative.notify
+DEBUG 2023-05-18 21:17:26,943 basenative.py notify          625 receive a notify signal
+INFO  2023-05-18 21:17:26,944 basenative.py wrapper         29  call BaseNative.notify end
+DEBUG 2023-05-18 21:17:26,944 basenative.py __op_auto_authorize 725 before auto_authorize_callback
+INFO  2023-05-18 21:17:26,945 basenative.py wrapper         25  call WXAndroidNative.allow_authorize
+DEBUG 2023-05-18 21:17:26,945 androidnative.py _handle_btn     341 handle android.widget.Button[允许]
+DEBUG 2023-05-18 21:17:27,447 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","rawPath":"pages/index/index.html","query":{},"openType":"switchTab","__ts__":1684415847763,"webviewId":140533919},1684415847778]}}
+INFO  2023-05-18 21:17:27,448 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'rawPath': 'pages/index/index.html', 'query': {}, 'openType': 'switchTab', '__ts__': 1684415847763, 'webviewId': 140533919}, 1684415847778]}
+INFO  2023-05-18 21:17:29,968 minitest.py capture         673 capture assertEqual-success.png
+INFO  2023-05-18 21:17:29,970 basenative.py wrapper         25  call WXAndroidNative.screen_shot
+INFO  2023-05-18 21:17:30,278 basenative.py wrapper         29  call WXAndroidNative.screen_shot end
+DEBUG 2023-05-18 21:17:30,279 connection.py _safely_send    417 ASYNC_SEND > {"id":"0fc16dfa-d789-4c71-b630-e1f2164fb2a3","method":"App.callWxMethod","params":{"method":"switchTab","args":[{"url":"/pages/index/index"}]}}
+DEBUG 2023-05-18 21:17:30,839 connection.py _on_message     652 RECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","rawPath":"pages/index/index.html","query":{},"openType":"switchTab","__ts__":1684415851219,"webviewId":140533919},1684415851230]}}
+INFO  2023-05-18 21:17:30,841 app.py     _on_route_changed 785 Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'rawPath': 'pages/index/index.html', 'query': {}, 'openType': 'switchTab', '__ts__': 1684415851219, 'webviewId': 140533919}, 1684415851230]}
+DEBUG 2023-05-18 21:17:30,842 connection.py _on_message     652 RECV < {"id":"0fc16dfa-d789-4c71-b630-e1f2164fb2a3","result":{"result":{"errMsg":"switchTab:ok"}}}
+INFO  2023-05-18 21:17:30,843 connection.py _handle_async_msg 688 received async msg: 0fc16dfa-d789-4c71-b630-e1f2164fb2a3
+DEBUG 2023-05-18 21:17:30,864 minitest.py _miniTearDown   587 =========Current case Down: test_no_login=========
+INFO  2023-05-18 21:17:30,865 minitest.py capture         673 capture teardown.png
+INFO  2023-05-18 21:17:30,866 basenative.py wrapper         25  call WXAndroidNative.screen_shot
+INFO  2023-05-18 21:17:31,195 basenative.py wrapper         29  call WXAndroidNative.screen_shot end
+INFO  2023-05-18 21:17:31,196 basenative.py wrapper         25  call BaseNative.get_start_up
+INFO  2023-05-18 21:17:31,197 basenative.py wrapper         29  call BaseNative.get_start_up end
