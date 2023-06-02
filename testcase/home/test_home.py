@@ -26,7 +26,7 @@ class HomePageTest(BaseCase):
         self.assertTrue(self.homepage.is_banner_exist())
 
     @minium.ddt_case('author', 'note', 'brand', 'kind', 'hot_key')
-    def test_rank_path(self, value):
+    def test_all_rank_path(self, value):
 
         self.homepage.click_Rank(rank_type=value)
         path = self.homepage.current_path
@@ -53,8 +53,9 @@ class HomePageTest(BaseCase):
         if value == 'note':
             self.assertEqual(num, '12')
 
-    def test_fans_inc_rank(self):
+    @minium.ddt_case('author_rank', 'note_rank', 'brand_rank', 'hot_key_rank')
+    def test_rank_num(self, types):
 
-        num = self.homepage.get_fans_inc_rank_num()
+        num = self.homepage.get_rank_num(types=types)
         self.assertEqual(num, 5)
-        self.slide_to_fans_inc_rank(types='top')
+        self.homepage.slide_to_rank(types=types, top=1)

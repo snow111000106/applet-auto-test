@@ -13,10 +13,13 @@
   "assert_capture": true,
   "auto_authorize": true,
   "device_desire": {
-    "wda_bundle": "com.cxh.WebDriverAgent.xctrunner",
+    "wda_project_path": "E:\\wda\\WebDriverAgent",
     "os_type": "ios",
     "device_info": {
-      "udid": "00008101-001E554C0178001E"
+      "udid": "00008101-001E554C0178001E",
+      "model": "iPhone 12 mini",
+      "version": "16.4.1",
+      "name": "虹"
     }
   }
 }

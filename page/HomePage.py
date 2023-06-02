@@ -23,6 +23,9 @@ class HomePage(BasePage):
     my_monitor_author = "/page/view/view[3]/info-count/view/view[2]/view/view[1]/text[1]"
     my_monitor_note = "/page/view/view[3]/info-count/view/view[2]/view/view[2]/text[1]"
     fans_inc_rank = "author-take-goods-list-item"
+    realtime_note_rank = "notes-list-item"
+    brand_commercial_rank = "brand-commercial-launch-list-item"
+    hot_key_count_rank = "hot-search-term-list-item"
 
     def click_Rank(self, rank_type):
         """ 点击跳转榜单 """
@@ -68,18 +71,54 @@ class HomePage(BasePage):
         result = self.is_ele_exist(self.banner_picture)
         return result
 
-    def slide_to_fans_inc_rank(self, types='fans_inc_rank'):
-        """滑动到涨粉榜"""
-        if types == 'fans_inc_rank':
-            self.scroll(high=256)
+    def slide_to_rank(self, types, top=None):
+        """滑动到各个榜单"""
+        if types == 'author_rank':
+            if top is None:
+                self.scroll(high=300)
+            else:
+                self.scroll(high=-300)
+            self.sleep()
+        if types == 'note_rank':
+            if top is None:
+                self.scroll(high=670)
+            else:
+                self.scroll(high=-670)
+            self.sleep()
+        if types == 'brand_rank':
+            if top is None:
+                self.scroll(high=1110)
+            else:
+                self.scroll(high=-1110)
+            self.sleep()
+        if types == 'hot_key_rank':
+            if top is None:
+                self.scroll(high=1560)
+            else:
+                self.scroll(high=-1560)
             self.sleep()
         else:
-            self.scroll(high=-256)
-            self.sleep()
+            print("榜单类型输入错误，仅支持author_rank，note_rank，brand_rank，hot_key_rank")
 
-    def get_fans_inc_rank_num(self):
-        """ 获取博主涨粉榜个数 """
-        self.slide_to_fans_inc_rank()
-        num_list = self.get_elements(self.fans_inc_rank)
-        num = len(num_list)
+    def get_rank_num(self, types):
+        """ 获取榜单个数 """
+        num = 0
+        if types == 'author_rank':
+            self.slide_to_rank(types=types)
+            num_list = self.get_elements(self.fans_inc_rank)
+            num = len(num_list)
+        if types == 'note_rank':
+            self.slide_to_rank(types=types)
+            num_list = self.get_elements(self.realtime_note_rank)
+            num = len(num_list)
+        if types == 'brand_rank':
+            self.slide_to_rank(types=types)
+            num_list = self.get_elements(self.brand_commercial_rank)
+            num = len(num_list)
+        if types == 'hot_key_rank':
+            self.slide_to_rank(types=types)
+            num_list = self.get_elements(self.hot_key_count_rank)
+            num = len(num_list)
+        else:
+            print("榜单类型输入错误，仅支持author_rank，note_rank，brand_rank，hot_key_rank")
         return num
