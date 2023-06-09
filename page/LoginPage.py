@@ -19,13 +19,13 @@ class LoginPage(BasePage):
     # 手机号或账号登录
     select_btn = ("/page/view/view[2]/view[3]/button", "手机号或账号登录")
     # 输入手机号
-    input_mobile = "[placeholder='请输入手机号']"
+    input_mobile = "input[placeholder='请输入手机号']"
     # 发送验证码
     send_code_btn = "/page/view/view[2]/view[2]/button"
     # 输入验证码
-    input_code = "[placeholder='请输入验证码']"
+    input_code = "input[placeholder='请输入验证码']"
     # 输入密码
-    input_pwd = "[placeholder='请输入密码']"
+    input_pwd = "input[placeholder='请输入密码']"
     # 登录按钮
     login_btn = "/page/view/view[3]/button"
     # 切换账号密码登录
@@ -35,32 +35,19 @@ class LoginPage(BasePage):
 
     def input_key(self, ele, value):
         try:
-            self.get_element(ele).input(value)
+            if config.platform != 'ios':
+                self.get_element(ele).input(value)
+            else:
+                self.get_element(ele).trigger("input", {"value": value})
         except:
             print('输入错误，报错元素{}'.format(ele))
-
-    def select_login_type(self, types):
-        """ 选择登录方式 """
-        try:
-            if types == 'wechat':
-                self.wechat_login()
-            elif types == 'no_login':
-                self.no_login()
-            elif types == 'account':
-                self.account_login()
-            elif types == 'code':
-                self.code_login()
-            else:
-                print('登录方式输入错误，请输入wechat,no_login,account,code四种登录方式')
-        except:
-            print('选择登录方式失败')
 
     def wechat_login(self):
         """ 微信登录 """
         try:
             self.navigate_to_open(route.login_index_page)
             self.get_element(selector=self.wechat_login_btn[0], text_contains=self.wechat_login_btn[1]).click()
-            self.sleep()
+            return self
         except:
             print('微信登录失败')
 
@@ -69,29 +56,29 @@ class LoginPage(BasePage):
         try:
             self.navigate_to_open(route.login_index_page)
             self.get_element(selector=self.no_login_btn[0], text_contains=self.no_login_btn[1]).click()
-            self.sleep(1)
+            return self
         except:
             print('暂不登录操作失败')
 
-    def account_login(self):
+    def account_login(self, user_name, pwd):
         """ 账号密码登录 """
         try:
             self.navigate_to_open(route.login_login_page)
-            self.input_key(ele=self.input_mobile, value=config.default_account)
-            self.input_key(ele=self.input_pwd, value=config.default_pwd)
+            self.input_key(ele=self.input_mobile, value=user_name)
+            self.input_key(ele=self.input_pwd, value=pwd)
             self.get_element(self.login_btn).click()
-            self.sleep()
+            return self
         except:
             print('账号密码登录失败')
 
-    def code_login(self):
+    def code_login(self, user_name, code):
         """ 验证码登录 """
         try:
             self.navigate_to_open(route.login_register_page)
-            self.input_key(ele=self.input_mobile, value=config.default_account)
-            self.input_key(ele=self.input_code, value=config.default_code)
+            self.input_key(ele=self.input_mobile, value=user_name)
+            self.input_key(ele=self.input_code, value=code)
             self.get_element(self.login_btn).click()
-            self.sleep()
+            return self
         except:
             print('验证码登录失败')
 

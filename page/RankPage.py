@@ -11,10 +11,15 @@ from page.BasePage import BasePage
 
 class RankPage(BasePage):
 
+    # 涨粉榜
     fans_inc_rank = ("/page/view/view[2]/view/author-rank/view/view/view[1]", '涨粉榜')
+    # 实时笔记榜
     note_realtime_rank = ("/page/view/view[2]/view/notes-rank/view/view/view[1]", '实时笔记榜')
+    # 品牌种草榜
     brand_recommend_rank = ("/page/view/view[2]/view/brand-rank/view/view/view[2]", '品牌种草榜')
+    # 品类种草榜
     kind_recommend_rank = ("/page/view/view[2]/view/category-rank/view/view/view[2]", '品类种草榜')
+    # 热搜词增量榜
     hot_key_inc_rank = ("/page/view/view[2]/view/hot-wordsrank/view/view/view[1]", '热搜词增量榜')
 
     def is_element_exist(self, rank_type):

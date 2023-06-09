@@ -8,10 +8,11 @@
 import time
 
 import minium
-from page.HomePage import HomePage
-from page.RankPage import RankPage
 from conf import route
 from testcase.home.BaseCase import BaseCase
+from page.HomePage import HomePage
+from page.RankPage import RankPage
+from conf import config
 
 
 @minium.ddt_class
@@ -24,6 +25,14 @@ class HomePageTest(BaseCase):
 
     def test_banner(self):
         self.assertTrue(self.homepage.is_banner_exist())
+
+    @minium.skipUnless(condition=config.platform != "ide", reason="真机支持人工客服跳转")
+    def test_banner_jump(self):
+        self.homepage.click_banner()
+        time.sleep(2)
+        path = self.homepage.current_path
+        self.assertEqual(path, route.home_page)
+        self.homepage.back_mini()
 
     @minium.ddt_case('author', 'note', 'brand', 'kind', 'hot_key')
     def test_all_rank_path(self, value):
@@ -59,3 +68,29 @@ class HomePageTest(BaseCase):
         num = self.homepage.get_rank_num(types=types)
         self.assertEqual(num, 5)
         self.homepage.slide_to_rank(types=types, top=1)
+
+    @minium.ddt_case('author_rank', 'note_rank', 'brand_rank', 'hot_key_rank')
+    def test_rank_more(self, types):
+
+        self.homepage.slide_to_rank(types=types)
+        self.homepage.click_more(rank_type=types)
+        path = self.homepage.current_path
+        self.assertEqual(path, route.rank_page)
+        self.homepage.slide_to_rank(types=types, top=1)
+
+    def test_fans_rank_detail_ele(self):
+
+        self.homepage.slide_to_rank(types='author_rank')
+        num = self.homepage.is_fans_rank_ele_exist()
+        self.assertEqual(num, 5)
+        self.homepage.slide_to_rank(types='author_rank', top=1)
+
+    def test_fans_rank_click(self):
+
+        self.homepage.slide_to_rank(types='author_rank')
+        self.homepage.click_into_detail(rank_type='author')
+        time.sleep(2)
+        path = self.homepage.current_path
+        self.assertEqual(path, route.author_detail_page)
+        self.homepage.back()
+        self.homepage.slide_to_rank(types='author_rank', top=1)

@@ -2,7 +2,7 @@
   "pkg_list": [
     {
       "case_list": [
-        "test_rank_*"
+        "test_fans_*"
       ],
       "pkg": "testcase.test_home"
     }

@@ -6,17 +6,16 @@
 # @File : main.py
 # @desc :
 
-import unittest
-from testcase.test_login import LoginPageTest
-
+import os
+from conf import config
 
 if __name__ == "__main__":
 
-    # 单个执行
-    # suite = unittest.TestSuite()
-    # suite.addTest(HomePageTest('test_author_path')
-    # 多个执行
-    loader_suite = unittest.TestLoader().discover('.', 'test_*.py')
+    # 运行执行class文件中的指定用例,无法获取当前path，无法运行有ddt装饰的用例
+    cmd0 = "minitest -m testcase.home.test_home --case test_rank_num -c {}_config.json -g".format(config.platform)
+    # 运行执行testcase文件中的指定用例
+    cmd1 = "minitest -m testcase.home.test_home -c {}_config.json -g".format(config.platform)
+    # 按照suite配置执行用例
+    cmd2 = "minitest -s suite.json -c {}_config.json -g".format(config.platform)
 
-    runner = unittest.TextTestRunner()
-    runner.run(loader_suite)
+    os.system(cmd2)

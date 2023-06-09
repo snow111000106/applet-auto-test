@@ -6,10 +6,9 @@
 # @File : test_login.py
 # @desc :
 
-from pathlib import Path
 import minium
 from page.LoginPage import LoginPage
-from conf import route
+from conf import route, config
 
 
 class BaseCase(minium.MiniTest):
@@ -18,8 +17,8 @@ class BaseCase(minium.MiniTest):
     @classmethod
     def setUpClass(cls) -> None:
         super(BaseCase, cls).setUpClass()
-        # cls.loginpage = LoginPage(cls)
-        # cls.loginpage.account_login()
+        cls.loginpage = LoginPage(cls)
+        cls.loginpage.code_login(user_name=config.default_account, code=config.default_code)
 
     @classmethod
     def tearDownClass(cls):
