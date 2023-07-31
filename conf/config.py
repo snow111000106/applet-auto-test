@@ -6,9 +6,15 @@
 # @File : config.py
 # @desc : 其他配置
 
-default_account = '13100000001'
-default_pwd = '123456'
+# 默认验证码
 default_code = '888888'
 
+# 是否在活动中
+is_activity = True
+
+# 环境配置
 env = 'debug'
+# 调试端配置ide/ios/android
 platform = 'ide'
+# 运行的操作系统 windows/macOS
+sys = 'win'  # 填写win/mac

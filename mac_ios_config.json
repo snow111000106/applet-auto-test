@@ -1,0 +1,25 @@
+{
+  "project_path": "C:\\Users\\CDS-DN268\\PycharmProjects\\rb-wxapp\\dist\\build\\mp-weixin",
+  "dev_tool_path": "/Applications/wechatwebdevtools.app/Contents/MacOS/cli",
+  "debug_mode": "debug",
+  "enable_app_log": true,
+  "platform": "IOS",
+  "test_port": 9420,
+  "close_ide": true,
+  "use_push": true,
+  "auto_relaunch": true,
+  "remote_connect_timeout": 180,
+  "outputs": "outputs",
+  "assert_capture": true,
+  "auto_authorize": true,
+  "device_desire": {
+    "wda_project_path": "E:\\wda\\WebDriverAgent",
+    "os_type": "ios",
+    "device_info": {
+      "udid": "00008101-001E554C0178001E",
+      "model": "iPhone 12 mini",
+      "version": "16.4.1",
+      "name": "虹"
+    }
+  }
+}

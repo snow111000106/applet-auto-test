@@ -1,7 +1,69 @@
 {
-    "test_num": 4,
-    "errors": [],
-    "failures": [],
+    "test_num": 71,
+    "errors": [
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_vip_order_limit_1_\u4e2a\u4eba\u7248",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\python39\\lib\\unittest\\case.py\", line 550, in _callTestMethod\n    method()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\ddt.py\", line 220, in wrapper\n    return func(self, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\cmm-xhs-auto-miniprogram\\testcase\\vip_4\\test_vip_page.py\", line 205, in test_vip_order_limit\n    types, tips = value\nValueError: too many values to unpack (expected 2)\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_vip_order_limit_2",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\python39\\lib\\unittest\\case.py\", line 550, in _callTestMethod\n    method()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\ddt.py\", line 220, in wrapper\n    return func(self, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\cmm-xhs-auto-miniprogram\\testcase\\vip_4\\test_vip_page.py\", line 205, in test_vip_order_limit\n    types, tips = value\nValueError: not enough values to unpack (expected 2, got 1)\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_vip_order_limit_1_\u4e2a\u4eba\u7248",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\python39\\lib\\unittest\\case.py\", line 550, in _callTestMethod\n    method()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\ddt.py\", line 220, in wrapper\n    return func(self, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\cmm-xhs-auto-miniprogram\\testcase\\vip_4\\test_vip_page.py\", line 205, in test_vip_order_limit\n    types, tips = value\nValueError: too many values to unpack (expected 2)\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_vip_order_limit_2",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\n  File \"D:\\python39\\lib\\unittest\\case.py\", line 550, in _callTestMethod\n    method()\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\ddt.py\", line 220, in wrapper\n    return func(self, *args, **kwargs)\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\cmm-xhs-auto-miniprogram\\testcase\\vip_4\\test_vip_page.py\", line 205, in test_vip_order_limit\n    types, tips = value\nValueError: not enough values to unpack (expected 2, got 1)\n"
+        }
+    ],
+    "failures": [
+        {
+            "module": "UserPageTest",
+            "error_type": "test_case",
+            "case_name": "test_user_info",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u4e13\u4e1a\u7248' != '14400000006'\n- \u4e13\u4e1a\u7248\n+ 14400000006\n\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_user_info",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u4e13\u4e1a\u7248' != '\u4f01\u4e1a\u7248'\n- \u4e13\u4e1a\u7248\n? ^\n+ \u4f01\u4e1a\u7248\n? ^\n\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_vip_btn_info_2___\u4e13\u4e1a\u7248____\u7acb\u5373\u7eed\u8d39__",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7acb\u5373\u5347\u7ea7' != '\u7acb\u5373\u7eed\u8d39'\n- \u7acb\u5373\u5347\u7ea7\n+ \u7acb\u5373\u7eed\u8d39\n\n"
+        },
+        {
+            "module": "UserPageTest",
+            "error_type": "test_case",
+            "case_name": "test_user_info",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u4e13\u4e1a\u7248' != '14400000006'\n- \u4e13\u4e1a\u7248\n+ 14400000006\n\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_user_info",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u4e13\u4e1a\u7248' != '\u4f01\u4e1a\u7248'\n- \u4e13\u4e1a\u7248\n? ^\n+ \u4f01\u4e1a\u7248\n? ^\n\n"
+        },
+        {
+            "module": "VipPageTest",
+            "error_type": "test_case",
+            "case_name": "test_vip_btn_info_2___\u4e13\u4e1a\u7248____\u7acb\u5373\u7eed\u8d39__",
+            "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 41, in testPartExecutor\n    yield\n  File \"C:\\Users\\CDS-DN268\\PycharmProjects\\applet-auto\\venv\\lib\\site-packages\\minium\\framework\\libs\\unittest\\case.py\", line 127, in run\n    self._callTestMethod(testMethod)\nAssertionError: '\u7acb\u5373\u5347\u7ea7' != '\u7acb\u5373\u7eed\u8d39'\n- \u7acb\u5373\u5347\u7ea7\n+ \u7acb\u5373\u7eed\u8d39\n\n"
+        }
+    ],
     "class_errors": [],
     "class_failures": []
 }

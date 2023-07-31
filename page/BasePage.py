@@ -4,10 +4,9 @@
 # @Author : chenxuehong
 # @Version：V 0.1
 # @File : BasePage.py
-# @desc :
+# @desc : 基础页面封装
 
-import time,minium, threading
-from minium import Callback
+import time
 
 
 class BasePage:
@@ -30,7 +29,7 @@ class BasePage:
                                                             text_contains=text_contains,
                                                             value=value, max_timeout=max_timeout)
 
-    def get_elements(self, selector, inner_text=None, max_timeout=20) -> list:
+    def get_elements(self, selector, inner_text=None, max_timeout=20):
         """获取指定所有元素,返回元素列表"""
         return self.mini.page.get_elements(selector, inner_text=inner_text, max_timeout=max_timeout)
 
@@ -49,6 +48,7 @@ class BasePage:
     def switch_to_tabbar(self, route):
         """跳转到tabbar页面，关闭其他非tabbar页面 """
         self.mini.app.switch_tab(route)
+        time.sleep(0.5)
         return self
 
     def relaunch_to_open(self, route):
@@ -94,15 +94,15 @@ class BasePage:
         except:
             return False
 
-    def wait_for_condition(self, condition, max_timeout=20) -> bool:
-        """等待条件成立"""
-        result = self.mini.page.wait_for(condition, max_timeout)
-        return result
+    def hook_wx_method(self, method, before=None, after=None, callback=None):
+        """hook 微信小程序方法"""
+        self.mini.app.hook_wx_method(method, before, after, callback)
 
-    def click_xy(self, x, y):
-        """点击xy坐标"""
-        self.mini.native.click_coordinate(x=x, y=y)
-        return self
+    def release_hook_wx_method(self, method):
+        """释放hook 微信小程序方法"""
+        self.mini.app.release_hook_wx_method(method)
 
-
+    def call_wx_method(self, method, args=None, plugin_appid='auto'):
+        """调用微信小程序方法"""
+        self.mini.app.call_wx_method(method, args, plugin_appid)
 

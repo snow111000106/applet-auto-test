@@ -4,7 +4,7 @@
 # @Author : chenxuehong
 # @Version：V 0.1
 # @File : RankPage.py
-# @desc :
+# @desc : 登录页面封装
 
 from page.BasePage import BasePage
 from conf import route, config

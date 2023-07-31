@@ -1,8 +1,0 @@
-ERROR 2023-05-31 15:46:50,780 assertbase.py _get_error_info 282 self._outcome is None, maybe a class error
-ERROR 2023-05-31 15:46:50,782 assertbase.py _get_stack_info 342 <bound method HomePageTest.setUpClass of <class 'testcase.home.test_home.HomePageTest'>>
-Traceback (most recent call last):
-  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\venv\lib\site-packages\minium\framework\libs\unittest\suite.py", line 101, in _handleClassSetUp
-    setUpClass()
-  File "C:\Users\CDS-DN268\PycharmProjects\applet-auto\testcase\home\test_home.py", line 29, in setUpClass
-    cls.loginpage.wechat_login()
-AttributeError: type object 'HomePageTest' has no attribute 'loginpage'

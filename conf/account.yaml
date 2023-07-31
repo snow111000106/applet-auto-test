@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2023/07/06
+# @Author  : chenxuehong
+# @File    : account.yaml
+# @Remake  : 账号配置
+
+
+vip_default:
+  name: '14400000005'
+  pwd: '123456'
+  mobile: '144****0005'
+  vip_name: '企业版'
+  vip_time: '2025-07-30'
+
+vip_6:
+  name: '14400000005'
+  pwd: '123456'
+  mobile: '144****0005'
+  vip_name: '企业版'
+  vip_time: '2025-07-30'
+
+vip_5:
+  name: '14400000007'
+  pwd: '123456'
+  mobile: '144****0007'
+  vip_name: '个人版'
+  vip_time: '2024-08-14'
+
+vip_4:
+  name: '14400000006'
+  pwd: '123456'
+  mobile: '144****0006'
+  vip_name: '专业版'
+  vip_time: '2025-10-09'
+
+vip_1:
+  name: '14400000008'
+  pwd: '123456'
+  mobile: '144****0008'
+  vip_name: '普通会员'
