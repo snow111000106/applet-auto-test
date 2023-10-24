@@ -35,7 +35,7 @@ class UserPageTest(BaseCase):
         vip_name, vip_time, user_name = self.userpage.get_user_info()
         self.assertEqual(vip_name, Base.get_vip_info(6)['vip_name'])
         self.assertEqual(vip_time, Base.get_vip_info(6)['vip_time'])
-        self.assertEqual(user_name, Base.get_vip_info(6)['mobile'])
+        self.assertEqual(user_name, Base.get_vip_info(6)['nickname'])
 
     @minium.ddt_case(('my_collect', '博主/笔记/品牌/品类'), ('my_trace', '实时监控数据'))
     def test_my_collect_text(self, value):
@@ -109,8 +109,8 @@ class UserPageTest(BaseCase):
         time.sleep(2)
         nick_name, mobil, wechat_status, account_types = self.userpage.get_my_set_info()
         try:
-            self.assertEqual(nick_name, Base.get_vip_info(6)['mobile'])
-            self.assertEqual(mobil, Base.get_vip_info(6)['mobile'])
+            self.assertEqual(nick_name, Base.get_vip_info(6)['nickname'])
+            self.assertEqual(mobil, Base.get_vip_info(6)['mobile_blind'])
             self.assertEqual(wechat_status, '未绑定微信')
             self.assertEqual(account_types, '主账号')
         finally:

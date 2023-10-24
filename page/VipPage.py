@@ -92,13 +92,17 @@ class VipPage(BasePage):
         time.sleep(1)
         return self
 
-    def get_user_info(self):
+    def get_user_info(self, is_vip=1):
         """获取vip页面用户信息"""
         name = self.get_context(self.user_name)
         vip_name = self.get_context(self.vip_name)
-        vip_time = self.get_context(self.vip_time)
 
-        return name, vip_name, vip_time[7:]
+        if is_vip == 1:
+            vip_time = self.get_context(self.vip_time)[7:]
+        else:
+            vip_time = None
+
+        return name, vip_name, vip_time
 
     def switch_vip_tab(self, tab_name):
         """切换各个会员版本"""
@@ -205,6 +209,11 @@ class VipPage(BasePage):
         text = self.get_context(self.vip_btn)
         return text
 
+    def get_vip_btn_style(self, name):
+        """获取vip按钮文案的样式属性值"""
+        text = self.get_styles(self.vip_btn, names=name)
+        return text
+
     def get_vip_pop_info(self):
         """获取vip购买弹窗的信息"""
         period = self.get_context(self.vip_period)
@@ -234,6 +243,5 @@ class VipPage(BasePage):
         elif types == 'cancel':
             self.click_ele(types='coupon_cancel')
         return self
-
 
 

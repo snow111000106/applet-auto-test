@@ -20,7 +20,7 @@ class BaseCase(minium.MiniTest):
     def setUpClass(cls) -> None:
         super(BaseCase, cls).setUpClass()
         cls.loginpage = LoginPage(cls)
-        cls.loginpage.code_login(user_name=Base.get_vip_info(1)['name'], code=config.default_code)
+        cls.loginpage.code_login(user_name=Base.get_vip_info(1)['mobile'], code=config.default_code)
         time.sleep(1)
 
     @classmethod

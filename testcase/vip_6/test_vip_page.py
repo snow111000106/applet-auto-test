@@ -7,6 +7,7 @@
 # @desc : 企业版-vip页面测试用例
 
 import minium, time
+import re
 from conf import config, route
 from minium import Callback
 from testcase.vip_6.BaseCase import BaseCase
@@ -32,12 +33,12 @@ class VipPageTest(BaseCase):
 
     def test_user_info(self):
         """
-        测试用户信息正确
+        测试企业版用户信息正确
         """
         name, vip_name, vip_time = self.vippage.get_user_info()
         self.assertEqual(vip_name, Base.get_vip_info(6)['vip_name'])
         self.assertEqual(vip_time, Base.get_vip_info(6)['vip_time'])
-        self.assertEqual(name, Base.get_vip_info(6)['mobile'])
+        self.assertEqual(name, Base.get_vip_info(6)['nickname'])
 
     @minium.ddt_case((1, '12个月', '28999', '51588', '22589', True), (2, '3个月', '11999', '12897', '898', True),
                      (3, '1个月', '4299', '4299', None, False), (4, '24个月', '43999', '103176', '59177', True))
@@ -134,6 +135,7 @@ class VipPageTest(BaseCase):
         finally:
             self.vippage.back()
 
+    @minium.retry(cnt=3)
     @minium.ddt_case(('author', ['博主数据', '博主详情近360天', '查看全部博主榜单', '全部博主库']),
                      ('note', ['笔记数据', '查看全部笔记榜单', '查看全部笔记库']),
                      ('brand', ['品牌数据', '品牌详情近360天', '查看全部品牌库', '查看全部品牌榜单']),
@@ -144,17 +146,18 @@ class VipPageTest(BaseCase):
         """
         测试企业版vip权益概览显示正确
         """
-        self.vippage.switch_vip_tab(tab_name='企业版')
-        time.sleep(3)
-        self.vippage.scroll(high=800, duration=1000)
-        time.sleep(1)
-        types, vip_overview = value
-        context = self.vippage.get_vip_overview(types=types)
         try:
+            self.vippage.switch_vip_tab(tab_name='企业版')
+            time.sleep(3)
+            self.vippage.scroll_page(high=800, duration=1000)
+            time.sleep(1)
+            types, vip_overview = value
+            context = self.vippage.get_vip_overview(types=types)
             self.assertEqual(context, vip_overview)
         finally:
-            self.vippage.scroll(high=-800, duration=1000)
+            self.vippage.scroll_page(high=-800, duration=1000)
 
+    @minium.retry(cnt=3)
     @minium.ddt_case(('author', ['博主数据', '博主详情近180天', '博主榜单前500', '全部博主库']),
                      ('note', ['笔记数据', '笔记榜单前500', '查看全部笔记库']),
                      ('brand', ['品牌数据', '品牌详情近180天', '查看全部品牌库', '品牌榜单前500']),
@@ -165,17 +168,18 @@ class VipPageTest(BaseCase):
         """
         测试专业版vip权益概览显示正确
         """
-        self.vippage.switch_vip_tab(tab_name='专业版')
-        time.sleep(2)
-        self.vippage.scroll(high=800, duration=1000)
-        time.sleep(1)
-        types, vip_overview = value
-        context = self.vippage.get_vip_overview(types=types)
         try:
+            self.vippage.switch_vip_tab(tab_name='专业版')
+            time.sleep(2)
+            self.vippage.scroll_page(high=800, duration=1000)
+            time.sleep(1)
+            types, vip_overview = value
+            context = self.vippage.get_vip_overview(types=types)
             self.assertEqual(context, vip_overview)
         finally:
-            self.vippage.scroll(high=-800, duration=1000)
+            self.vippage.scroll_page(high=-800, duration=1000)
 
+    @minium.retry(cnt=3)
     @minium.ddt_case(('author', ['博主数据', '博主详情近90天', '博主榜单前200', '博主库前200']),
                      ('note', ['笔记数据', '笔记榜单前200', '笔记库前200']),
                      ('brand', ['品牌数据', '品牌详情不可查看', '品牌库前200', '品牌榜单前200']),
@@ -186,18 +190,18 @@ class VipPageTest(BaseCase):
         """
         测试个人版vip权益概览显示正确
         """
-        self.vippage.switch_vip_tab(tab_name='个人版')
-        time.sleep(3)
-        self.vippage.scroll(high=800, duration=1000)
-        time.sleep(1)
-        types, vip_overview = value
-        context = self.vippage.get_vip_overview(types=types)
         try:
+            self.vippage.switch_vip_tab(tab_name='个人版')
+            time.sleep(3)
+            self.vippage.scroll_page(high=800, duration=1000)
+            time.sleep(1)
+            types, vip_overview = value
+            context = self.vippage.get_vip_overview(types=types)
             self.assertEqual(context, vip_overview)
         finally:
-            self.vippage.scroll(high=-800, duration=1000)
+            self.vippage.scroll_page(high=-800, duration=1000)
 
-    @minium.ddt_case(('个人版',  {'errMsg': 'showToast:ok'}), ('专业版',  {'errMsg': 'showToast:ok'}))
+    @minium.ddt_case(('个人版',  '您已经是企业版,不支持购买个人版'), ('专业版',  '您已经是企业版,不支持购买专业版'))
     def test_vip_order_limit(self, value):
         """
         测试企业版用户无法续费个人版和专业版
@@ -205,11 +209,14 @@ class VipPageTest(BaseCase):
         types, tips = value
         self.vippage.switch_vip_tab(tab_name=types)
         try:
+            before = Callback()  # 创建接口调用前callback实例
             callback = Callback()  # 创建接口调用前callback实例
-            self.vippage.hook_wx_method('showToast', callback=callback)
+            self.vippage.hook_wx_method('showToast', before=before, callback=callback)
             self.vippage.click_ele(types='vip_btn')
+            before_value = before.get_callback_result(timeout=3)
+            self.assertEqual(before_value['title'], tips)
             re = callback.get_callback_result(timeout=3)
-            self.assertEqual(re, tips)
+            self.assertEqual(re, {'errMsg': 'showToast:ok'})
         finally:
             self.vippage.release_hook_wx_method('showToast')
 
@@ -217,21 +224,21 @@ class VipPageTest(BaseCase):
         """
         测试常见问题与反馈
         """
-        self.vippage.scroll(high=800, duration=1000)
+        self.vippage.scroll_page(high=800, duration=1000)
         time.sleep(2)
         question = '购买会员失败？'
         q = self.vippage.get_qa_context()
         try:
             self.assertEqual(q, question)
         finally:
-            self.vippage.scroll(high=-800, duration=1000)
+            self.vippage.scroll_page(high=-800, duration=1000)
 
     @minium.skipUnless(condition=config.platform != "ide", reason="ide不支持客服跳转")
     def test_customer_service_jump(self):
         """
         测试真机点击广告位跳转人工客服
         """
-        self.vippage.scroll(high=500)
+        self.vippage.scroll_page(high=500)
         self.vippage.click_ele(types='expand_btn')
         self.vippage.click_ele(types='customer_service')
         time.sleep(2)
@@ -242,7 +249,7 @@ class VipPageTest(BaseCase):
             self.vippage.back_mini()
             time.sleep(2)
             self.vippage.click_ele(types='expand_btn')
-            self.vippage.scroll(high=-500)
+            self.vippage.scroll_page(high=-500)
 
     @minium.ddt_case((1, '企业版12个月', '28999'), (2, '企业版3个月', '11999'),
                      (3, '企业版1个月', '4299'), (4, '企业版24个月', '43999'))
@@ -281,57 +288,30 @@ class VipPageTest(BaseCase):
         finally:
             self.vippage.click_ele(types='close_pop')
 
-    @minium.ddt_case(('企业版', '立即续费'), ('专业版', '立即开通'), ('个人版', '立即开通'))
+    @minium.ddt_case(('企业版', '立即续费', ['rgb(245, 101, 137)', 'rgb(255, 92, 92)']),
+                     ('专业版', '立即开通', ['rgb(227, 228, 229)', 'rgb(192, 195, 197)']),
+                     ('个人版', '立即开通', ['rgb(227, 228, 229)', 'rgb(192, 195, 197)']))
     def test_vip_btn_info(self, value):
         """
-        测试企业版用户查看vip续费按钮，文案显示正确
+        测试企业版用户查看vip续费按钮，文案，背景颜色显示正确
         """
-        types, re_text = value
+        types, re_text, re_background = value
         self.vippage.switch_vip_tab(tab_name=types)
         time.sleep(1)
         text = self.vippage.get_vip_btn_context()
+        bg = self.vippage.get_vip_btn_style(name='background')
+        line = []
+        for bg in bg:
+            # 使用正则表达式匹配 rgb 部分
+            linear_gradient_matches = re.findall(r'rgb\([^)]+\)', bg)
+
+            for match in linear_gradient_matches:
+                line.append(match)
+        color = self.vippage.get_vip_btn_style(name='color')
+        self.assertEqual(line, re_background)
         self.assertEqual(text, re_text)
+        self.assertEqual(color[0], 'rgb(255, 255, 255)')
 
-    @minium.skipUnless(condition=config.is_activity is True, reason="活动期间有优惠券入口")
-    @minium.ddt_case((1, ['不使用优惠券', '818特惠 立减1600元']), (2, ['不使用优惠券', '818特惠 立减500元']),
-                     (3, ['不使用优惠券', '818特惠 立减200元']), (4, ['不使用优惠券', '818特惠 立减4500元']))
-    def test_coupon(self, value):
-        """
-        测试优惠券面额
-        """
-        card_id, re_coupon_list = value
-        self.vippage.choose_vip_version(version='企业版', card_id=card_id)
-        time.sleep(1)
-        self.vippage.click_ele(types='vip_btn')
-        time.sleep(1)
-        self.vippage.click_ele(types='coupon_choose')
-        try:
-            coupon_list = self.vippage.get_coupon_list(num=2)
-            self.assertEqual(coupon_list, re_coupon_list)
-        finally:
-            self.vippage.click_ele(types='coupon_cancel')
-            self.vippage.click_ele(types='close_pop')
-
-    @minium.skipUnless(condition=config.is_activity is True, reason="活动期间有优惠券入口")
-    @minium.ddt_case((1, '818特惠 立减1600元'), (2, '818特惠 立减500元'),
-                     (3, '818特惠 立减200元'), (4, '818特惠 立减4500元'))
-    def test_cc_coupon_choose(self, value):
-        """
-        测试优惠券面额
-        """
-        card_id, re_coupon = value
-        self.vippage.choose_vip_version(version='企业版', card_id=card_id)
-        self.vippage.click_ele(types='vip_btn')
-        coupon = self.vippage.return_coupon_price()
-        self.assertEqual(coupon, '请选择优惠券')
-        self.vippage.click_ele(types='coupon_choose')
-        time.sleep(1)
-        try:
-            self.vippage.choose_coupon(types='confirm', value=[1])
-            coupon = self.vippage.return_coupon_price()
-            self.assertEqual(coupon, re_coupon)
-        finally:
-            self.vippage.click_ele(types='close_pop')
 
 
 

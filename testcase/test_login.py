@@ -47,7 +47,7 @@ class LoginPageTest(BaseCase):
         测试【测试环境】验证码登录后，我的页面有用户名称
         """
 
-        self.loginpage.code_login(user_name=Base.get_vip_info(6)['name'], code=config.default_code)
+        self.loginpage.code_login(user_name=Base.get_vip_info(6)['mobile'], code=config.default_code)
         time.sleep(1)
         self.assertTrue(self.userpage.is_user_name_exist())
 
@@ -57,15 +57,15 @@ class LoginPageTest(BaseCase):
         测试【测试环境】账号密码登录后，我的页面有用户名称
         """
 
-        self.loginpage.account_login(user_name=Base.get_vip_info(6)['name'], pwd=Base.get_vip_info(6)['pwd'])
+        self.loginpage.account_login(user_name=Base.get_vip_info(6)['mobile'], pwd=Base.get_vip_info(6)['pwd'])
         time.sleep(1)
         self.assertTrue(self.userpage.is_user_name_exist())
 
     @minium.skipUnless(condition=config.env == "debug", reason="测试登录后账号等级变化")
-    @minium.ddt_case((Base.get_vip_info(6)['name'], Base.get_vip_info(6)['pwd'], Base.get_vip_info(6)['vip_name']),
-                     (Base.get_vip_info(5)['name'], Base.get_vip_info(5)['pwd'], Base.get_vip_info(5)['vip_name']),
-                     (Base.get_vip_info(4)['name'], Base.get_vip_info(4)['pwd'], Base.get_vip_info(4)['vip_name']),
-                     (Base.get_vip_info(1)['name'], Base.get_vip_info(1)['pwd'], Base.get_vip_info(1)['vip_name'])
+    @minium.ddt_case((Base.get_vip_info(6)['mobile'], Base.get_vip_info(6)['pwd'], Base.get_vip_info(6)['vip_name']),
+                     (Base.get_vip_info(5)['mobile'], Base.get_vip_info(5)['pwd'], Base.get_vip_info(5)['vip_name']),
+                     (Base.get_vip_info(4)['mobile'], Base.get_vip_info(4)['pwd'], Base.get_vip_info(4)['vip_name']),
+                     (Base.get_vip_info(1)['mobile'], Base.get_vip_info(1)['pwd'], Base.get_vip_info(1)['vip_name'])
                      )
     def test_login_vip(self, value):
         """

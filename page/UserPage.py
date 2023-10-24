@@ -15,6 +15,8 @@ class UserPage(BasePage):
 
     # 用户名称
     user_name = '/page/view/view[2]/view[1]/view/view/view[1]/text'
+    # 登录入口
+    login_enter = '/page/view/view[2]/view[1]/view/view/text'
     # 用户头像
     user_avatar = '/page/view/view[2]/view[1]/view/img-lazy/u-image/view/image'
     # 用户会员版本名称

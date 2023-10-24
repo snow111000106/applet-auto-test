@@ -4,7 +4,7 @@
       "case_list": [
         "test_*"
       ],
-      "pkg": "testcase.vip_4.test_*"
+      "pkg": "testcase.test_*"
     }
   ]
 }

@@ -9,6 +9,8 @@
 页面封装模块，basepage放置基础页面操作等方法，xxxpage放置页面元素，操作方法，业务流程
 # testcase
 测试用例模块，basecase放置基础用例的前置后置等，test_xxx放置测试用例
+
+vip_6是企业版用例，vip_5是个人版用例，vip_4是专业版用例，vip_1是普通用户的用例
 # congig文件
 xxx_config.json文件为运行ide，真机所需要配置的参数
 # main文件

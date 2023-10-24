@@ -272,30 +272,27 @@ class HomePage(BasePage):
 
         if types == 'author_rank':
             if top is None:
-                self.scroll(high=300)
+                self.scroll_page(high=300)
             else:
-                self.scroll(high=-300)
-            time.sleep(3)
+                self.scroll_page(high=-300)
         elif types == 'note_rank':
             if top is None:
-                self.scroll(high=670)
+                self.scroll_page(high=670)
             else:
-                self.scroll(high=-670)
-            time.sleep(3)
+                self.scroll_page(high=-670)
         elif types == 'brand_rank':
             if top is None:
-                self.scroll(high=1110)
+                self.scroll_page(high=1110)
             else:
-                self.scroll(high=-1110)
-            time.sleep(3)
+                self.scroll_page(high=-1110)
         elif types == 'hot_key_rank':
             if top is None:
-                self.scroll(high=1560)
+                self.scroll_page(high=1560)
             else:
-                self.scroll(high=-1560)
-            time.sleep(3)
+                self.scroll_page(high=-1560)
         else:
             print("slide_to_rank-榜单类型输入错误，仅支持author_rank，note_rank，brand_rank，hot_key_rank")
+        time.sleep(2)
 
     def get_rank_num(self, types):
         """ 获取榜单个数 """

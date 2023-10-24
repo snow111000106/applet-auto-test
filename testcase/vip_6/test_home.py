@@ -63,14 +63,14 @@ class HomePageTest(BaseCase):
         path = self.homepage.current_path
         self.assertEqual(path, route.rank_page)
 
-    @minium.ddt_case(('author', '1'), ('note', '2'), ('brand', '3'))
+    @minium.ddt_case(('author', config.author_collect), ('note', config.note_collect), ('brand', config.brand_collect))
     def test_my_collect_num(self, value):
         """
         测试我的博主/笔记/品牌收藏数量是否正确
         """
         types, num = value
         re = self.homepage.my_collect_num(rank_type=types)
-        self.assertEqual(re, num)
+        self.assertEqual(int(re), num)
 
     @minium.ddt_case('author', 'note', 'brand')
     def test_my_collect_jump(self, value):
@@ -82,14 +82,14 @@ class HomePageTest(BaseCase):
         path = self.homepage.current_path
         self.assertEqual(path, route.my_collect_page)
 
-    @minium.ddt_case(('author', '0'), ('note', '0'))
+    @minium.ddt_case(('author', config.author_monitor), ('note', config.note_monitor))
     def test_my_monitor_num(self, value):
         """
         测试我的博主/笔记监控数量是否正确
         """
         types, num = value
         re = self.homepage.my_monitor_num(rank_type=types)
-        self.assertEqual(re, num)
+        self.assertEqual(int(re), num)
 
     @minium.ddt_case('author', 'note')
     def test_my_monitor_jump(self, value):

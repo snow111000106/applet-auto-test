@@ -3,7 +3,7 @@
 # @Time : 2023/5/10
 # @Author : chenxuehong
 # @Version：V 0.1
-# @File : test_login.py
+# @File : BaseCase.py
 # @desc : 登录页面基础用例封装
 
 import minium

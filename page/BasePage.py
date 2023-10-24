@@ -25,6 +25,7 @@ class BasePage:
 
     def get_element(self, selector, inner_text=None, text_contains=None, value=None, max_timeout=20):
         """获取元素"""
+
         return self.mini.app.get_current_page().get_element(selector, inner_text=inner_text,
                                                             text_contains=text_contains,
                                                             value=value, max_timeout=max_timeout)
@@ -76,14 +77,28 @@ class BasePage:
         self.mini.app.go_home()
         return self
 
-    def get_context(self, ele) -> str:
+    def get_context(self, ele):
         """获取元素内容"""
         context = self.get_element(ele).inner_text
         return context
 
-    def scroll(self, high, duration=500):
-        """滚动指定高度"""
+    def get_styles(self, ele, names) -> list:
+        """获取元素的样式属性，可判断颜色等"""
+        value = self.get_element(ele).styles(names)
+        return value
+
+    def get_attribute(self, ele, name) -> list:
+        """获取元素的属性值"""
+        value = self.get_element(ele).attribute(name)
+        return value
+
+    def scroll_page(self, high, duration=500):
+        """页面滚动到指定高度"""
         self.mini.page.scroll_to(scroll_top=high, duration=duration)
+
+    def wait_for_page(self, condition, max_timeout=10):
+        """等待直到指定的条件成立, 条件可以是页面元素, 也可以是自定义的函数或者是需要等待的时间(单位秒)"""
+        self.mini.page.wait_for(condition=condition, max_timeout=max_timeout)
 
     def is_ele_exist(self, selector, inner_text=None, text_contains=None, value=None):
         """元素是否存在"""
@@ -93,6 +108,10 @@ class BasePage:
             return True
         except:
             return False
+
+    def call_shot(self, filename):
+        """截屏"""
+        self.mini.native.screen_shot(filename)
 
     def hook_wx_method(self, method, before=None, after=None, callback=None):
         """hook 微信小程序方法"""
@@ -105,4 +124,16 @@ class BasePage:
     def call_wx_method(self, method, args=None, plugin_appid='auto'):
         """调用微信小程序方法"""
         self.mini.app.call_wx_method(method, args, plugin_appid)
+
+    def check_scroll(self, page, top=False):
+        """根据页数滚动页面"""
+        if top is False:
+            for i in range(1, page+1):
+                # 多翻一页保证可以获取到元素
+                self.scroll_page(high=2100*i, duration=500)
+                time.sleep(2)
+        else:
+            self.scroll_page(high=0, duration=500)
+            time.sleep(2)
+        return self
 
