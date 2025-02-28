@@ -1,4 +1,4 @@
-# cmm-xhs-auto-MiniProgram
+# auto-MiniProgram
 
 # common
 通用模块，放置常用的方法
@@ -19,5 +19,5 @@ xxx_config.json文件为运行ide，真机所需要配置的参数
 # suite.json文件
 测试套件，放置测试规则
 
-这个项目不维护了，我离职了，删了一些重要的信息,框架大体都没有动应该能运行吧，有问题联系我邮箱s111000106@gmail.com
+这个项目不维护了，我离职了，删了一些重要的信息用xxxx替代,框架大体都没有动应该能运行吧，有问题联系我邮箱s111000106@gmail.com
 
