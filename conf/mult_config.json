@@ -1,0 +1,40 @@
+[{
+  "project_path": "C:\\Users\\CDS-DN268\\PycharmProjects\\rb-wxapp\\dist\\build\\mp-weixin",
+  "dev_tool_path": "E:\\wx\\微信web开发者工具\\cli.bat",
+  "debug_mode": "debug",
+  "enable_app_log": true,
+  "platform": "ide",
+  "test_port": 9421,
+  "close_ide": false,
+  "app": "wx",
+  "use_push": true,
+  "auto_relaunch": false,
+  "remote_connect_timeout": 180,
+  "outputs": "outputs",
+  "assert_capture": true,
+  "auto_authorize": true,
+  "account_info": {
+        "wx_nick_name": "xxxxx",
+        "open_id": "xxxxx"
+    }
+},
+{
+  "project_path": "C:\\Users\\CDS-DN268\\PycharmProjects\\rb-wxapp\\dist\\build\\mp-weixin",
+  "dev_tool_path": "E:\\wx\\微信web开发者工具\\cli.bat",
+  "debug_mode": "debug",
+  "enable_app_log": true,
+  "platform": "ide",
+  "test_port": 9422,
+  "close_ide": false,
+  "app": "wx",
+  "use_push": true,
+  "auto_relaunch": false,
+  "remote_connect_timeout": 180,
+  "outputs": "outputs",
+  "assert_capture": true,
+  "auto_authorize": true,
+  "account_info": {
+        "wx_nick_name": "xxxx",
+        "open_id": "xxxx"
+    }
+}]

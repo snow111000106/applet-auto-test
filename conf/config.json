@@ -1,0 +1,15 @@
+{
+    "project_path": "C:/Users/CDS-DN268/PycharmProjects/rb-wxapp/dist/build/mp-weixin",
+    "dev_tool_path": "E:/wx/\u5fae\u4fe1web\u5f00\u53d1\u8005\u5de5\u5177/cli.bat",
+    "debug_mode": "debug",
+    "enable_app_log": true,
+    "platform": "ide",
+    "test_port": 9420,
+    "close_ide": true,
+    "use_push": true,
+    "auto_relaunch": false,
+    "remote_connect_timeout": 180,
+    "outputs": "outputs",
+    "assert_capture": true,
+    "auto_authorize": true
+}
